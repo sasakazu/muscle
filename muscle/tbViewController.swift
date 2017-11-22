@@ -8,7 +8,7 @@
 
 import UIKit
 
-class tableViewController: UIViewController , UITableViewDelegate, UITableViewDataSource {
+class tableViewController: UIViewController {
     
     let fruits = ["リンゴ", "みかん", "ぶどう"]
     
