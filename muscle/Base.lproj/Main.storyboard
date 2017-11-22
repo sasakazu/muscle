@@ -43,16 +43,54 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="A0g-kG-5XG"/>
                     <navigationItem key="navigationItem" id="g4y-wm-kpv"/>
+                    <connections>
+                        <segue destination="zDG-z3-x9b" kind="show" identifier="showSecondView" id="Eew-UY-V4v"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4gK-Cx-kbS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="975" y="-798"/>
         </scene>
-        <!--Item-->
+        <!--Second View Controller-->
+        <scene sceneID="Wbp-Wq-6UZ">
+            <objects>
+                <viewController id="zDG-z3-x9b" customClass="SecondViewController" customModule="muscle" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="R3V-cG-iFw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qdt-Ra-qhA">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Pj4-ia-BuY">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Pj4-ia-BuY" id="IAj-A1-YSC">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="ADT-L0-gcf"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="qdt-Ra-qhA" id="3pC-T9-ZSa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k3s-88-wgp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1704.8" y="-803.74812593703155"/>
+        </scene>
+        <!--知識-->
         <scene sceneID="iCy-Eo-qIe">
             <objects>
                 <navigationController id="ASj-a2-5Ax" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Lj0-wk-ov4"/>
+                    <tabBarItem key="tabBarItem" title="知識" id="Lj0-wk-ov4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="l8Q-Lw-BJH">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -113,7 +151,7 @@
             </objects>
             <point key="canvasLocation" x="-28" y="1027"/>
         </scene>
-        <!--アカウント-->
+        <!--タイムライン-->
         <scene sceneID="ANx-sK-mNb">
             <objects>
                 <viewController id="xS6-Qx-SSD" sceneMemberID="viewController">
@@ -123,7 +161,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="2AM-Ja-RWp"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="アカウント" id="HRB-A3-XLo"/>
+                    <tabBarItem key="tabBarItem" title="タイムライン" id="HRB-A3-XLo"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wrn-lz-ME6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -140,11 +178,11 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
+                        <segue destination="xS6-Qx-SSD" kind="relationship" relationship="viewControllers" id="vsL-9i-Oci"/>
                         <segue destination="ZQt-Pd-KEK" kind="relationship" relationship="viewControllers" id="p1h-Hd-MMU"/>
                         <segue destination="YCa-e3-xTG" kind="relationship" relationship="viewControllers" id="Xly-2t-DlY"/>
-                        <segue destination="xS6-Qx-SSD" kind="relationship" relationship="viewControllers" id="vsL-9i-Oci"/>
-                        <segue destination="02B-Q6-PO4" kind="relationship" relationship="viewControllers" id="U53-zM-WtD"/>
                         <segue destination="ASj-a2-5Ax" kind="relationship" relationship="viewControllers" id="I32-5G-y9Q"/>
+                        <segue destination="02B-Q6-PO4" kind="relationship" relationship="viewControllers" id="U53-zM-WtD"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="akN-sG-U7S" userLabel="First Responder" sceneMemberID="firstResponder"/>

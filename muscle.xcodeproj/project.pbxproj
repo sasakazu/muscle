@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		73330F681FC568F100D65B74 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73330F671FC568F100D65B74 /* SecondViewController.swift */; };
 		733928D51FC5309E006B7438 /* tableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733928D41FC5309E006B7438 /* tableViewController.swift */; };
 		73450D341FC3DB3100E09B9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73450D331FC3DB3100E09B9B /* AppDelegate.swift */; };
 		73450D361FC3DB3200E09B9B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73450D351FC3DB3200E09B9B /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		73330F671FC568F100D65B74 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		733928D41FC5309E006B7438 /* tableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableViewController.swift; sourceTree = "<group>"; };
 		73450D301FC3DB3100E09B9B /* muscle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = muscle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73450D331FC3DB3100E09B9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				733928D41FC5309E006B7438 /* tableViewController.swift */,
 				73450D351FC3DB3200E09B9B /* ViewController.swift */,
 				73450D371FC3DB3200E09B9B /* Main.storyboard */,
+				73330F671FC568F100D65B74 /* SecondViewController.swift */,
 				73450D3A1FC3DB3200E09B9B /* Assets.xcassets */,
 				73450D3C1FC3DB3200E09B9B /* LaunchScreen.storyboard */,
 				73450D3F1FC3DB3200E09B9B /* Info.plist */,
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73330F681FC568F100D65B74 /* SecondViewController.swift in Sources */,
 				73450D361FC3DB3200E09B9B /* ViewController.swift in Sources */,
 				73450D341FC3DB3100E09B9B /* AppDelegate.swift in Sources */,
 				733928D51FC5309E006B7438 /* tableViewController.swift in Sources */,

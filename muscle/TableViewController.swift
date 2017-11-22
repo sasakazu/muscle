@@ -10,7 +10,10 @@ import UIKit
 
 class tableViewController: UIViewController , UITableViewDelegate, UITableViewDataSource {
     
-    let fruits = ["リンゴ", "みかん", "ぶどう"]
+    // 7. SecondViewに渡す文字列
+    var selectedText: String?
+    
+    let knowledgeBig = [ "筋肉について", "フォームについて", "トレーニングについて" ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,8 +27,11 @@ class tableViewController: UIViewController , UITableViewDelegate, UITableViewDa
     
     /// セルの個数を指定するデリゲートメソッド（必須）
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return fruits.count
+        return knowledgeBig.count
     }
+    
+    
+    
     
     /// セルに値を設定するデータソースメソッド（必須）
     internal func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -34,15 +40,35 @@ class tableViewController: UIViewController , UITableViewDelegate, UITableViewDa
         let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "MyCell", for: indexPath as IndexPath)
         
         // セルに表示する値を設定する
-        cell.textLabel!.text = fruits[indexPath.row]
+        cell.textLabel!.text = knowledgeBig[indexPath.row]
         
         return cell
     }
     
+    
+    
+    
     /// セルが選択された時に呼ばれるデリゲートメソッド
     private func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: IndexPath) {
-        print("セル番号：\(indexPath.row) セルの内容：\(fruits[indexPath.row])")
+        // 8. SecondViewControllerに渡す文字列をセット
+        selectedText = knowledgeBig[indexPath.row]
+        
+        // 8. SecondViewControllerへ遷移するSegueを呼び出す
+        performSegue(withIdentifier: "showSecondView",sender: nil)
+        
     }
+    
+    
+    // Segueで遷移時の処理
+    func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        if (segue.identifier == "showSecondView") {
+            let secondVC: SecondViewController = (segue.destination as? SecondViewController)!
+            
+            // 11. SecondViewControllerのtextに選択した文字列を設定する
+            secondVC.text = selectedText
+        }
+    }
+    
 }
 
 
