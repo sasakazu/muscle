@@ -40,13 +40,16 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="rbj-Kg-4na">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="muscle1" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="rbj-Kg-4na">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rbj-Kg-4na" id="bDW-rQ-Qnm">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="pYL-8o-NAg" kind="show" identifier="showSecondView" id="Hn5-An-q58"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -60,20 +63,21 @@
             </objects>
             <point key="canvasLocation" x="644" y="-606.74662668665667"/>
         </scene>
-        <!--View Controller-->
+        <!--textview-->
         <scene sceneID="ef4-yg-iD9">
             <objects>
-                <viewController id="pYL-8o-NAg" sceneMemberID="viewController">
+                <viewController id="pYL-8o-NAg" customClass="SecondViewController" customModule="muscle" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nlO-6L-IDF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="0yq-5B-N1V"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="textview" id="qzx-IK-51S"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XY3-oC-Ca7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1463.2" y="-607.64617691154433"/>
+            <point key="canvasLocation" x="1442" y="-607"/>
         </scene>
         <!--筋トレメニュー-->
         <scene sceneID="w5K-9Q-HL2">
@@ -89,7 +93,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VdV-BU-wNr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="582" y="133"/>
+            <point key="canvasLocation" x="672.79999999999995" y="183.95802098950526"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="h9Y-84-cHV">

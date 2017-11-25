@@ -10,7 +10,8 @@ import UIKit
 
 class knowledgeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource
 {
-    
+ 
+    var selectedText: String?
 
     // Sectionで使用する配列を定義する.
     private let mySections: NSArray = ["筋肉について", "フォームについて"]
@@ -18,9 +19,9 @@ class knowledgeViewController: UIViewController, UITableViewDelegate, UITableVie
 
 
     // Tableで使用する配列を定義する.
-    private let muscleItems: NSArray = ["muscle1", "muscle2", "muscle3", "muscle4", "muscle5"]
+    private let muscleItems: NSArray = ["筋肉が大きくなるし組み\n筋肉が大きくなるし組み筋肉が大きくなるし組み筋肉が大きくなるし組み筋肉が大きくなるし組み筋肉が大きくなるし組み筋肉が大きくなるし組み筋肉が大きくなるし組み筋肉が大きくなるし組み筋肉が大きくなるし組み筋肉が大きくなるし組み筋肉が大きくなるし組み筋肉が大きくなるし組み筋肉が大きくなるし組み筋肉が大きくなるし組み筋肉が大きくなるし組み筋肉が大きくなるし組み筋肉が大きくなるし組み筋肉が大きくなるし組み筋肉が大きくなるし組み", "超回復とは？", "筋肉の部位について", "muscle4", "muscle5"]
     
-    private let formItems: NSArray = ["form1", "form2", "form3", "form14"]
+    private let formItems: NSArray = ["ベンチプレス", "ダンベル", "デットリフト", "プルダウン"]
 
 
     override func viewDidLoad() {
@@ -87,7 +88,11 @@ class knowledgeViewController: UIViewController, UITableViewDelegate, UITableVie
             } else if indexPath.section == 1 {
                 print("Value: \(formItems[indexPath.row])")
             }
+            
+        
         }
+    
+
     
     
         /*
