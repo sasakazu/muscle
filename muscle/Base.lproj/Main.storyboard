@@ -10,6 +10,38 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Home-->
+        <scene sceneID="65l-EF-PIl">
+            <objects>
+                <viewController id="YMN-dV-y2G" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Y4X-i2-U2K">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="今日やること" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oq9-5K-Eic">
+                                <rect key="frame" x="73" y="61" width="210" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="今日のカロリー" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="riz-tO-9a6">
+                                <rect key="frame" x="73" y="219" width="210" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="DqC-kd-4oO"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="home.png" id="n5O-lR-d3S"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yzg-89-Ocp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1351.2" y="130.88455772113943"/>
+        </scene>
         <!--知識-->
         <scene sceneID="KJv-OK-dVB">
             <objects>
@@ -25,7 +57,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Ip-Tz-zoR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-188" y="-598"/>
+            <point key="canvasLocation" x="292" y="-789"/>
         </scene>
         <!--Knowledge View Controller-->
         <scene sceneID="82e-Xo-CVi">
@@ -61,7 +93,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ka9-aI-dcf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="644" y="-606.74662668665667"/>
+            <point key="canvasLocation" x="978" y="-789"/>
         </scene>
         <!--textview-->
         <scene sceneID="ef4-yg-iD9">
@@ -87,7 +119,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XY3-oC-Ca7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1440.8" y="-607.64617691154433"/>
+            <point key="canvasLocation" x="1814" y="-789"/>
         </scene>
         <!--筋トレメニュー-->
         <scene sceneID="w5K-9Q-HL2">
@@ -120,7 +152,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VdV-BU-wNr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="672.79999999999995" y="183.95802098950526"/>
+            <point key="canvasLocation" x="292" y="-110"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="h9Y-84-cHV">
@@ -136,7 +168,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p23-qx-gl8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-767" y="1027"/>
+            <point key="canvasLocation" x="292" y="2006"/>
         </scene>
         <!--Diary-->
         <scene sceneID="NKl-fg-J3v">
@@ -152,7 +184,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SDH-UR-onD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-28" y="1027"/>
+            <point key="canvasLocation" x="292" y="1263"/>
         </scene>
         <!--タイムライン-->
         <scene sceneID="ANx-sK-mNb">
@@ -168,7 +200,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wrn-lz-ME6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="673" y="1027"/>
+            <point key="canvasLocation" x="292" y="574"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="TPv-Zp-ThQ">
@@ -183,6 +215,7 @@
                     <connections>
                         <segue destination="xS6-Qx-SSD" kind="relationship" relationship="viewControllers" id="vsL-9i-Oci"/>
                         <segue destination="ZQt-Pd-KEK" kind="relationship" relationship="viewControllers" id="p1h-Hd-MMU"/>
+                        <segue destination="YMN-dV-y2G" kind="relationship" relationship="viewControllers" id="dMo-29-esV"/>
                         <segue destination="YCa-e3-xTG" kind="relationship" relationship="viewControllers" id="Xly-2t-DlY"/>
                         <segue destination="aYd-E5-pdU" kind="relationship" relationship="viewControllers" id="nYw-JW-6E3"/>
                         <segue destination="02B-Q6-PO4" kind="relationship" relationship="viewControllers" id="U53-zM-WtD"/>
@@ -190,12 +223,13 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="akN-sG-U7S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-376" y="133.13343328335833"/>
+            <point key="canvasLocation" x="-498" y="131"/>
         </scene>
     </scenes>
     <resources>
         <image name="brain2.png" width="32" height="32"/>
         <image name="diary.png" width="32" height="32"/>
+        <image name="home.png" width="32" height="32"/>
         <image name="menu.png" width="32" height="32"/>
         <image name="timeline.png" width="32" height="32"/>
     </resources>
