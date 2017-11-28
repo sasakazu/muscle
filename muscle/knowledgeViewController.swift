@@ -83,13 +83,15 @@ class knowledgeViewController: UIViewController, UITableViewDelegate, UITableVie
     
     
         func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-            if indexPath.section == 0 {
-                print("Value: \(muscleItems[indexPath.row])")
-            } else if indexPath.section == 1 {
-                print("Value: \(formItems[indexPath.row])")
-            }
+         
+            print(muscleItems[indexPath.row])
             
-        
+            // 8. SecondViewControllerに渡す文字列をセット
+            selectedText = muscleItems[indexPath.row] as! String
+            
+            // 8. SecondViewControllerへ遷移するSegueを呼び出す
+            performSegue(withIdentifier: "showSecondView",sender: nil)
+
         }
     
 
@@ -125,6 +127,18 @@ class knowledgeViewController: UIViewController, UITableViewDelegate, UITableVie
             
             return cell
         }
+    
+    // Segueで遷移時の処理
+    func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        if (segue.identifier == "showSecondView") {
+            let secondVC: SecondViewController = (segue.destination as? SecondViewController)!
+            
+            // 11. SecondViewControllerのtextに選択した文字列を設定する
+            secondVC.text = selectedText
+        }
+    }
+    
+    
 }
 
 
