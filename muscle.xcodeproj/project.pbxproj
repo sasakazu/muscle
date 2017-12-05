@@ -20,6 +20,9 @@
 		7379962C1FCD5CB200591A73 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 7379962B1FCD5CB200591A73 /* menu.png */; };
 		7379962E1FCD5D5E00591A73 /* timeline.png in Resources */ = {isa = PBXBuildFile; fileRef = 7379962D1FCD5D5E00591A73 /* timeline.png */; };
 		737996321FCD785000591A73 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 737996311FCD785000591A73 /* home.png */; };
+		739B49671FD6A40E006F0C2D /* muscleMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739B49661FD6A40E006F0C2D /* muscleMenuViewController.swift */; };
+		739B49691FD6A453006F0C2D /* muscleMenuAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739B49681FD6A453006F0C2D /* muscleMenuAddViewController.swift */; };
+		739B496B1FD6A4A2006F0C2D /* muscleMenuEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739B496A1FD6A4A2006F0C2D /* muscleMenuEditViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,9 @@
 		7379962B1FCD5CB200591A73 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
 		7379962D1FCD5D5E00591A73 /* timeline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = timeline.png; sourceTree = "<group>"; };
 		737996311FCD785000591A73 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
+		739B49661FD6A40E006F0C2D /* muscleMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = muscleMenuViewController.swift; sourceTree = "<group>"; };
+		739B49681FD6A453006F0C2D /* muscleMenuAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = muscleMenuAddViewController.swift; sourceTree = "<group>"; };
+		739B496A1FD6A4A2006F0C2D /* muscleMenuEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = muscleMenuEditViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +79,9 @@
 				73450D331FC3DB3100E09B9B /* AppDelegate.swift */,
 				73450D351FC3DB3200E09B9B /* ViewController.swift */,
 				73450D371FC3DB3200E09B9B /* Main.storyboard */,
+				739B496A1FD6A4A2006F0C2D /* muscleMenuEditViewController.swift */,
+				739B49681FD6A453006F0C2D /* muscleMenuAddViewController.swift */,
+				739B49661FD6A40E006F0C2D /* muscleMenuViewController.swift */,
 				73673D4D1FC95FB2009DE621 /* knowledgeViewController.swift */,
 				73330F671FC568F100D65B74 /* SecondViewController.swift */,
 				73450D3A1FC3DB3200E09B9B /* Assets.xcassets */,
@@ -176,8 +185,11 @@
 			files = (
 				73330F681FC568F100D65B74 /* SecondViewController.swift in Sources */,
 				73450D361FC3DB3200E09B9B /* ViewController.swift in Sources */,
+				739B496B1FD6A4A2006F0C2D /* muscleMenuEditViewController.swift in Sources */,
+				739B49691FD6A453006F0C2D /* muscleMenuAddViewController.swift in Sources */,
 				73450D341FC3DB3100E09B9B /* AppDelegate.swift in Sources */,
 				73673D4E1FC95FB2009DE621 /* knowledgeViewController.swift in Sources */,
+				739B49671FD6A40E006F0C2D /* muscleMenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
