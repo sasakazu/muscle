@@ -1,0 +1,6 @@
+framework module Pods_muscle {
+  umbrella header "Pods-muscle-umbrella.h"
+
+  export *
+  module * { export * }
+}

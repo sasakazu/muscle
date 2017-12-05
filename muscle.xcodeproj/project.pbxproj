@@ -23,9 +23,12 @@
 		739B49671FD6A40E006F0C2D /* muscleMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739B49661FD6A40E006F0C2D /* muscleMenuViewController.swift */; };
 		739B49691FD6A453006F0C2D /* muscleMenuAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739B49681FD6A453006F0C2D /* muscleMenuAddViewController.swift */; };
 		739B496B1FD6A4A2006F0C2D /* muscleMenuEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739B496A1FD6A4A2006F0C2D /* muscleMenuEditViewController.swift */; };
+		79312D59879CE63E53B8A23C /* Pods_muscle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0666D78A335AF68A35FFA108 /* Pods_muscle.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0666D78A335AF68A35FFA108 /* Pods_muscle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_muscle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EE133AC13E22601E0AB302A /* Pods-muscle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-muscle.debug.xcconfig"; path = "Pods/Target Support Files/Pods-muscle/Pods-muscle.debug.xcconfig"; sourceTree = "<group>"; };
 		73330F671FC568F100D65B74 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		73450D301FC3DB3100E09B9B /* muscle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = muscle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73450D331FC3DB3100E09B9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +47,7 @@
 		739B49661FD6A40E006F0C2D /* muscleMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = muscleMenuViewController.swift; sourceTree = "<group>"; };
 		739B49681FD6A453006F0C2D /* muscleMenuAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = muscleMenuAddViewController.swift; sourceTree = "<group>"; };
 		739B496A1FD6A4A2006F0C2D /* muscleMenuEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = muscleMenuEditViewController.swift; sourceTree = "<group>"; };
+		8A252D6DF0E58ADB69478BB6 /* Pods-muscle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-muscle.release.xcconfig"; path = "Pods/Target Support Files/Pods-muscle/Pods-muscle.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,17 +55,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79312D59879CE63E53B8A23C /* Pods_muscle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		41D2379A332F2914E901F0E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0666D78A335AF68A35FFA108 /* Pods_muscle.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6681B5EDC5BCA36917171ED4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2EE133AC13E22601E0AB302A /* Pods-muscle.debug.xcconfig */,
+				8A252D6DF0E58ADB69478BB6 /* Pods-muscle.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		73450D271FC3DB3100E09B9B = {
 			isa = PBXGroup;
 			children = (
 				73450D321FC3DB3100E09B9B /* muscle */,
 				73450D311FC3DB3100E09B9B /* Products */,
+				6681B5EDC5BCA36917171ED4 /* Pods */,
+				41D2379A332F2914E901F0E8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,9 +136,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 73450D421FC3DB3200E09B9B /* Build configuration list for PBXNativeTarget "muscle" */;
 			buildPhases = (
+				E9B0D254F1E579405C269097 /* [CP] Check Pods Manifest.lock */,
 				73450D2C1FC3DB3100E09B9B /* Sources */,
 				73450D2D1FC3DB3100E09B9B /* Frameworks */,
 				73450D2E1FC3DB3100E09B9B /* Resources */,
+				5665ED4625EEBE6E6F00E54C /* [CP] Embed Pods Frameworks */,
+				2606041530F8F3E917B439EE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -177,6 +204,62 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2606041530F8F3E917B439EE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-muscle/Pods-muscle-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5665ED4625EEBE6E6F00E54C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-muscle/Pods-muscle-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CalculateCalendarLogic/CalculateCalendarLogic.framework",
+				"${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CalculateCalendarLogic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSCalendar.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-muscle/Pods-muscle-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9B0D254F1E579405C269097 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-muscle-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		73450D2C1FC3DB3100E09B9B /* Sources */ = {
@@ -324,6 +407,7 @@
 		};
 		73450D431FC3DB3200E09B9B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EE133AC13E22601E0AB302A /* Pods-muscle.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -339,6 +423,7 @@
 		};
 		73450D441FC3DB3200E09B9B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A252D6DF0E58ADB69478BB6 /* Pods-muscle.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
