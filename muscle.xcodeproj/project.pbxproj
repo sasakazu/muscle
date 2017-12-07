@@ -23,6 +23,7 @@
 		739B49671FD6A40E006F0C2D /* muscleMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739B49661FD6A40E006F0C2D /* muscleMenuViewController.swift */; };
 		739B49691FD6A453006F0C2D /* muscleMenuAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739B49681FD6A453006F0C2D /* muscleMenuAddViewController.swift */; };
 		739B496B1FD6A4A2006F0C2D /* muscleMenuEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739B496A1FD6A4A2006F0C2D /* muscleMenuEditViewController.swift */; };
+		739B496D1FD936CD006F0C2D /* timeLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739B496C1FD936CD006F0C2D /* timeLineViewController.swift */; };
 		79312D59879CE63E53B8A23C /* Pods_muscle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0666D78A335AF68A35FFA108 /* Pods_muscle.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,7 @@
 		739B49661FD6A40E006F0C2D /* muscleMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = muscleMenuViewController.swift; sourceTree = "<group>"; };
 		739B49681FD6A453006F0C2D /* muscleMenuAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = muscleMenuAddViewController.swift; sourceTree = "<group>"; };
 		739B496A1FD6A4A2006F0C2D /* muscleMenuEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = muscleMenuEditViewController.swift; sourceTree = "<group>"; };
+		739B496C1FD936CD006F0C2D /* timeLineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timeLineViewController.swift; sourceTree = "<group>"; };
 		8A252D6DF0E58ADB69478BB6 /* Pods-muscle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-muscle.release.xcconfig"; path = "Pods/Target Support Files/Pods-muscle/Pods-muscle.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,6 +110,7 @@
 				739B49661FD6A40E006F0C2D /* muscleMenuViewController.swift */,
 				73673D4D1FC95FB2009DE621 /* knowledgeViewController.swift */,
 				73330F671FC568F100D65B74 /* SecondViewController.swift */,
+				739B496C1FD936CD006F0C2D /* timeLineViewController.swift */,
 				73450D3A1FC3DB3200E09B9B /* Assets.xcassets */,
 				73450D3C1FC3DB3200E09B9B /* LaunchScreen.storyboard */,
 				737996241FCD5B5C00591A73 /* images */,
@@ -271,6 +274,7 @@
 				739B496B1FD6A4A2006F0C2D /* muscleMenuEditViewController.swift in Sources */,
 				739B49691FD6A453006F0C2D /* muscleMenuAddViewController.swift in Sources */,
 				73450D341FC3DB3100E09B9B /* AppDelegate.swift in Sources */,
+				739B496D1FD936CD006F0C2D /* timeLineViewController.swift in Sources */,
 				73673D4E1FC95FB2009DE621 /* knowledgeViewController.swift in Sources */,
 				739B49671FD6A40E006F0C2D /* muscleMenuViewController.swift in Sources */,
 			);
