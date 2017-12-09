@@ -18,7 +18,7 @@ class timeLineViewController: UIViewController, UITableViewDataSource, UITableVi
     
     let label1Array: NSArray = [ "user1","user2","user3","user4" ]
     
-    let label2Array: NSArray = [ "2013/8/23/16:04","2013/8/23/16:15", "2013/8/23/16:47","2013/8/23/17:10" ]
+    let label2Array: NSArray = [ "つぶやき1","つぶやき2", "つぶやき3","つぶやき4" ]
     
 
     override func viewDidLoad() {

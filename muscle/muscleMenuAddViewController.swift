@@ -24,6 +24,10 @@ class muscleMenuAddViewController: UIViewController, UITableViewDataSource, UITa
         muscleMenuAddTable.delegate = self
         muscleMenuAddTable.dataSource = self
         
+        // trueで複数選択、falseで単一選択
+        muscleMenuAddTable.allowsMultipleSelection = true
+
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,6 +38,7 @@ class muscleMenuAddViewController: UIViewController, UITableViewDataSource, UITa
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return muscleMenutexts.count
     }
+    
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
@@ -47,9 +52,20 @@ class muscleMenuAddViewController: UIViewController, UITableViewDataSource, UITa
     
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(muscleMenutexts[indexPath.row])
+        let cell = tableView.cellForRow(at:indexPath)
+        
+        // チェックマークを入れる
+        cell?.accessoryType = .checkmark
+        
     }
 
    
+    // セルの選択が外れた時に呼び出される
+    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        let cell = tableView.cellForRow(at:indexPath)
+        
+        // チェックマークを外す
+        cell?.accessoryType = .none
+    }
 
 }
