@@ -6,10 +6,10 @@ target 'muscle' do
   use_frameworks!
 
   # Pods for muscle
-  
+
  pod 'FSCalendar'
  pod 'CalculateCalendarLogic'
-
+ pod 'Firebase/Database'
 
 
 end

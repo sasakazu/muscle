@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		73330F681FC568F100D65B74 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73330F671FC568F100D65B74 /* SecondViewController.swift */; };
+		73341D2D1FDBE69700FD98FA /* GoogleService-Info (1).plist in Resources */ = {isa = PBXBuildFile; fileRef = 73341D2C1FDBE69600FD98FA /* GoogleService-Info (1).plist */; };
 		73450D341FC3DB3100E09B9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73450D331FC3DB3100E09B9B /* AppDelegate.swift */; };
 		73450D361FC3DB3200E09B9B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73450D351FC3DB3200E09B9B /* ViewController.swift */; };
 		73450D391FC3DB3200E09B9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73450D371FC3DB3200E09B9B /* Main.storyboard */; };
@@ -32,6 +33,7 @@
 		0666D78A335AF68A35FFA108 /* Pods_muscle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_muscle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EE133AC13E22601E0AB302A /* Pods-muscle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-muscle.debug.xcconfig"; path = "Pods/Target Support Files/Pods-muscle/Pods-muscle.debug.xcconfig"; sourceTree = "<group>"; };
 		73330F671FC568F100D65B74 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		73341D2C1FDBE69600FD98FA /* GoogleService-Info (1).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info (1).plist"; sourceTree = "<group>"; };
 		73450D301FC3DB3100E09B9B /* muscle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = muscle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73450D331FC3DB3100E09B9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73450D351FC3DB3200E09B9B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				73450D3C1FC3DB3200E09B9B /* LaunchScreen.storyboard */,
 				737996241FCD5B5C00591A73 /* images */,
 				73450D3F1FC3DB3200E09B9B /* Info.plist */,
+				73341D2C1FDBE69600FD98FA /* GoogleService-Info (1).plist */,
 			);
 			path = muscle;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 				73450D3E1FC3DB3200E09B9B /* LaunchScreen.storyboard in Resources */,
 				7379962C1FCD5CB200591A73 /* menu.png in Resources */,
 				73450D3B1FC3DB3200E09B9B /* Assets.xcassets in Resources */,
+				73341D2D1FDBE69700FD98FA /* GoogleService-Info (1).plist in Resources */,
 				7379962E1FCD5D5E00591A73 /* timeline.png in Resources */,
 				73450D391FC3DB3200E09B9B /* Main.storyboard in Resources */,
 			);
@@ -236,11 +240,17 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-muscle/Pods-muscle-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/CalculateCalendarLogic/CalculateCalendarLogic.framework",
 				"${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CalculateCalendarLogic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSCalendar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
