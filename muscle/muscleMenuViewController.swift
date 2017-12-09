@@ -12,11 +12,18 @@ class muscleMenuViewController: UIViewController {
     
 
     
-    @IBAction func menuAddBtn(_ sender: Any) {
+//    @IBAction func menuAddBtn(_ sender: Any) {
+    
+    
+    
+//    performSegue(withIdentifier: "goNext", sender: nil)
+//    }
+    
+    
+    @IBAction func gonextbtn(_ sender: Any) {
         
+        performSegue(withIdentifier: "goNext", sender: nil)
     }
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()

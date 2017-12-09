@@ -18,6 +18,10 @@ class muscleMenuAddViewController: UIViewController, UITableViewDataSource, UITa
         ["ダンベル", "ベンチプレス", "デットリフト", "ダンベルショルダープレス", "腹筋", "ダンベルカール", "ハンマーカール"]
 
     
+    // Sectionで使用する配列を定義する.
+    private let muscleMenuSections: NSArray = ["胸", "肩", "腕", "背中", "足", "腹"]
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // 4. delegateとdataSourceを設定
@@ -34,6 +38,21 @@ class muscleMenuAddViewController: UIViewController, UITableViewDataSource, UITa
         super.didReceiveMemoryWarning()
         
     }
+    
+//    セクションの数を返す
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return muscleMenuSections.count
+    }
+    
+//    セクションのタイトルを返す
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return muscleMenuSections[section] as? String
+        
+    }
+    
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return muscleMenutexts.count
