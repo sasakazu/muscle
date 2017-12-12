@@ -44,10 +44,6 @@ class signUpViewController: UIViewController {
         let data = ["name": userName.text!]
         DBRef.child("user/01").setValue(data)
     
-    
     }
     
-    
-    
-
 }
