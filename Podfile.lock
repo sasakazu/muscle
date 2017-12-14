@@ -31,6 +31,7 @@ PODS:
 
 DEPENDENCIES:
   - CalculateCalendarLogic
+  - Firebase/Core
   - Firebase/Database
   - FSCalendar
 
@@ -43,9 +44,9 @@ SPEC CHECKSUMS:
   FirebaseInstanceID: 148c25c986c8699e67304b114e365713dce467f2
   FSCalendar: a04b09f16f811bc92e82f3cf852a15225233b9d5
   GoogleToolboxForMac: 2501e2ad72a52eb3dfe7bd9aee7dad11b858bd20
-  leveldb-library: 4f9eedf84ab46b4fa3b7893bf30714b2a1a74022
+  leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
 
-PODFILE CHECKSUM: 7a804333a14497fa7d9f75709c1813214ea75478
+PODFILE CHECKSUM: d9ad35cbd9c1955ab95cd634d802aa4a6626c308
 
 COCOAPODS: 1.3.1

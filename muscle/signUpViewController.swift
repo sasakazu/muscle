@@ -15,15 +15,14 @@ import Firebase
 
 class signUpViewController: UIViewController {
 
-    @IBOutlet weak var userName: UITextField!
     
-    @IBOutlet weak var userEmail: UITextField!
+    
+    
     
     // インスタンス変数
     var DBRef:DatabaseReference!
 
-    
-    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,10 +39,6 @@ class signUpViewController: UIViewController {
     }
     
 
-    @IBAction func submitBtn(_ sender: Any) {
-        let data = ["name": userName.text!]
-        DBRef.child("user/01").setValue(data)
-    
-    }
+ 
     
 }

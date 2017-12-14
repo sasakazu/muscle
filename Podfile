@@ -10,6 +10,7 @@ target 'muscle' do
  pod 'FSCalendar'
  pod 'CalculateCalendarLogic'
  pod 'Firebase/Database'
+ pod 'Firebase/Core'
 
 
 end
