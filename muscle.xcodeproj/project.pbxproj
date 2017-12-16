@@ -26,8 +26,6 @@
 		739B496B1FD6A4A2006F0C2D /* muscleMenuEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739B496A1FD6A4A2006F0C2D /* muscleMenuEditViewController.swift */; };
 		739B496D1FD936CD006F0C2D /* timeLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739B496C1FD936CD006F0C2D /* timeLineViewController.swift */; };
 		73CC02321FD94D4300F59F6A /* calorieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CC02311FD94D4300F59F6A /* calorieViewController.swift */; };
-		73E77A171FE270830026939A /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E77A161FE270830026939A /* loginViewController.swift */; };
-		73E77A1B1FE2789A0026939A /* signupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E77A1A1FE2789A0026939A /* signupViewController.swift */; };
 		79312D59879CE63E53B8A23C /* Pods_muscle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0666D78A335AF68A35FFA108 /* Pods_muscle.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,8 +53,6 @@
 		739B496A1FD6A4A2006F0C2D /* muscleMenuEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = muscleMenuEditViewController.swift; sourceTree = "<group>"; };
 		739B496C1FD936CD006F0C2D /* timeLineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timeLineViewController.swift; sourceTree = "<group>"; };
 		73CC02311FD94D4300F59F6A /* calorieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calorieViewController.swift; sourceTree = "<group>"; };
-		73E77A161FE270830026939A /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
-		73E77A1A1FE2789A0026939A /* signupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = signupViewController.swift; path = ../signupViewController.swift; sourceTree = "<group>"; };
 		8A252D6DF0E58ADB69478BB6 /* Pods-muscle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-muscle.release.xcconfig"; path = "Pods/Target Support Files/Pods-muscle/Pods-muscle.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,8 +109,6 @@
 				73450D331FC3DB3100E09B9B /* AppDelegate.swift */,
 				73450D351FC3DB3200E09B9B /* ViewController.swift */,
 				73450D371FC3DB3200E09B9B /* Main.storyboard */,
-				73E77A1A1FE2789A0026939A /* signupViewController.swift */,
-				73E77A161FE270830026939A /* loginViewController.swift */,
 				73CC02311FD94D4300F59F6A /* calorieViewController.swift */,
 				739B496A1FD6A4A2006F0C2D /* muscleMenuEditViewController.swift */,
 				739B49681FD6A453006F0C2D /* muscleMenuAddViewController.swift */,
@@ -288,12 +282,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73E77A1B1FE2789A0026939A /* signupViewController.swift in Sources */,
 				73330F681FC568F100D65B74 /* SecondViewController.swift in Sources */,
 				73450D361FC3DB3200E09B9B /* ViewController.swift in Sources */,
 				739B496B1FD6A4A2006F0C2D /* muscleMenuEditViewController.swift in Sources */,
 				73CC02321FD94D4300F59F6A /* calorieViewController.swift in Sources */,
-				73E77A171FE270830026939A /* loginViewController.swift in Sources */,
 				739B49691FD6A453006F0C2D /* muscleMenuAddViewController.swift in Sources */,
 				73450D341FC3DB3100E09B9B /* AppDelegate.swift in Sources */,
 				739B496D1FD936CD006F0C2D /* timeLineViewController.swift in Sources */,
