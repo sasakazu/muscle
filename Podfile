@@ -11,6 +11,7 @@ target 'muscle' do
  pod 'CalculateCalendarLogic'
  pod 'Firebase/Database'
  pod 'Firebase/Core'
+ pod 'Firebase/Auth'
 
 
 end
