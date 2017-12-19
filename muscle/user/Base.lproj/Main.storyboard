@@ -540,10 +540,10 @@
             </objects>
             <point key="canvasLocation" x="-3233" y="76"/>
         </scene>
-        <!--Acount EditVC-->
+        <!--View Controller-->
         <scene sceneID="aRw-Ff-QkI">
             <objects>
-                <viewController id="sEX-nE-bfM" customClass="acountEditVC" customModule="muscle" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="sEX-nE-bfM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RcT-Lb-qiy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -584,14 +584,6 @@
                                     <color key="titleColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BdM-Q3-uSZ">
-                                <rect key="frame" x="102" y="596" width="171" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="更新">
-                                    <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="TgB-kj-STG"/>
@@ -604,7 +596,7 @@
         <!--Sign OutVC-->
         <scene sceneID="xAg-zq-Juc">
             <objects>
-                <viewController storyboardIdentifier="usersVC" id="Kg3-mj-5aC" customClass="SignOutVC" customModule="muscle" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Kg3-mj-5aC" customClass="SignOutVC" customModule="muscle" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HWC-sV-rvr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -727,34 +719,20 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UjU-Dw-Xg1">
+                                <rect key="frame" x="109" y="376" width="156" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Sign Up User"/>
+                                <connections>
+                                    <action selector="onSignUpTapped:" destination="Mcs-w9-t8V" eventType="touchUpInside" id="zr1-rn-qam"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eNt-X1-rmG">
-                                <rect key="frame" x="138" y="607" width="98" height="30"/>
+                                <rect key="frame" x="138" y="529" width="98" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Go To Sign In"/>
                                 <connections>
                                     <segue destination="cNG-WC-9gJ" kind="show" id="TOO-31-Nii"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZUt-85-SfO">
-                                <rect key="frame" x="60" y="335" width="109" height="77"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h4G-Bz-6c0">
-                                <rect key="frame" x="207" y="358" width="92" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="ファイル選択"/>
-                                <connections>
-                                    <action selector="fileImageTapped:" destination="Mcs-w9-t8V" eventType="touchUpInside" id="Qbw-8N-5yD"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UjU-Dw-Xg1">
-                                <rect key="frame" x="109" y="466" width="156" height="73"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="Sign Up"/>
-                                <connections>
-                                    <action selector="onSignUpTapped:" destination="Mcs-w9-t8V" eventType="touchUpInside" id="zr1-rn-qam"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -763,7 +741,6 @@
                     </view>
                     <connections>
                         <outlet property="emailTF" destination="Lhq-S1-uzF" id="qUL-vN-pob"/>
-                        <outlet property="iconImage" destination="ZUt-85-SfO" id="fTj-SS-xP9"/>
                         <outlet property="passwordTF" destination="kfu-S0-e4j" id="DGT-2r-JzR"/>
                         <outlet property="usernameTF" destination="Qhv-dU-k4D" id="oj2-DI-Yhj"/>
                         <segue destination="Kg3-mj-5aC" kind="show" identifier="signUpSegue" id="bMZ-KA-jvE"/>
@@ -771,7 +748,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wqx-Qu-iPS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3234.4000000000001" y="878.41079460269873"/>
+            <point key="canvasLocation" x="-3234" y="879"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="TPv-Zp-ThQ">

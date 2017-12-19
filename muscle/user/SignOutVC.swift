@@ -18,7 +18,7 @@ class SignOutVC: UIViewController {
 
         guard let username = Auth.auth().currentUser?.displayName else { return }
         
-        label.text = "Hello \(username)"
+        label.text = "Name: \(username)"
     }
     
     
@@ -33,6 +33,10 @@ class SignOutVC: UIViewController {
         }
     
     }
+    
+    
+    
+    
     
     
     

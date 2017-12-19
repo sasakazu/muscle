@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/sasakurakazuya/Dropbox/ios/muscle/muscle/SignOutVC.swift">
-   </FileRef>
-   <FileRef
       location = "group:muscle.xcodeproj">
    </FileRef>
    <FileRef
