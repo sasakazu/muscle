@@ -8,21 +8,15 @@
 
 import UIKit
 
-class SecondViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class SecondViewController: UIViewController {
     
     
     @IBOutlet weak var tableView: UITableView!
     
-    // 9. ViewControllerから受け取る文字列を入れる変数
-    var text: String?
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        tableView.delegate = self
-        tableView.dataSource = self
     }
 
     
@@ -30,23 +24,6 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
         super.didReceiveMemoryWarning()
     }
     
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
-    }
-    
-    // セルのテキストを追加
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: "Cell")
-        
-        // 10. 受け取った文字列をセルに表示
-        cell.textLabel?.text = text
-        return cell
-    }
-    
-    func tableView(table: UITableView, didSelectRowAtIndexPath indexPath:NSIndexPath) {
-        print(text)
-    }
-
+  
 
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cNG-WC-9gJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lgD-DI-kdS">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -42,7 +42,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="muscle1" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="rbj-Kg-4na">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="muscle1" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="rbj-Kg-4na">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rbj-Kg-4na" id="bDW-rQ-Qnm">
@@ -50,16 +50,23 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="pYL-8o-NAg" kind="show" identifier="showSecondView" id="Hn5-An-q58"/>
+                                            <segue destination="pYL-8o-NAg" kind="show" identifier="segue" id="Hn5-An-q58"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="dNQ-cA-o2g" id="MV0-lv-IZr"/>
+                                    <outlet property="delegate" destination="dNQ-cA-o2g" id="C7E-Ca-ncD"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Cab-D1-nPg"/>
                     </view>
                     <navigationItem key="navigationItem" id="vvr-87-cnU"/>
+                    <connections>
+                        <outlet property="konwledgeTableView" destination="tzH-D9-oEa" id="giR-Wt-b1h"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ka9-aI-dcf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -73,23 +80,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="teX-tv-LC8">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FIY-dg-hwE">
+                                <rect key="frame" x="16" y="76" width="343" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </tableView>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="contents" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EIu-X5-xLe">
+                                <rect key="frame" x="16" y="137" width="343" height="448"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="0yq-5B-N1V"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="textview" id="qzx-IK-51S"/>
-                    <connections>
-                        <outlet property="tableView" destination="teX-tv-LC8" id="eil-M2-tKd"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XY3-oC-Ca7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1686" y="-1865"/>
+            <point key="canvasLocation" x="1685.5999999999999" y="-1865.217391304348"/>
         </scene>
         <!--Muscle Menu View Controller-->
         <scene sceneID="w5K-9Q-HL2">
@@ -142,6 +155,7 @@
         <!--Muscle Menu Edit View Controller-->
         <scene sceneID="eoH-aD-TZj">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gjV-bC-xwI" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="F6n-ba-ccG" customClass="muscleMenuEditViewController" customModule="muscle" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ofv-OR-hfg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -167,7 +181,6 @@
                         <viewLayoutGuide key="safeArea" id="C2F-h8-KU7"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gjV-bC-xwI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1686" y="-452"/>
         </scene>
@@ -599,7 +612,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Scz-gM-beR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1677.5999999999999" y="-235.23238380809596"/>
+            <point key="canvasLocation" x="-1761" y="-317"/>
         </scene>
         <!--Sign OutVC-->
         <scene sceneID="xAg-zq-Juc">
@@ -822,7 +835,7 @@
         <image name="timeline.png" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="bMZ-KA-jvE"/>
+        <segue reference="50d-kj-Dfw"/>
         <segue reference="y0k-9h-16T"/>
     </inferredMetricsTieBreakers>
 </document>
