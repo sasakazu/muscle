@@ -11,14 +11,19 @@ import UIKit
 class SecondViewController: UIViewController {
     
     
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var klTitle: UILabel!
+    @IBOutlet weak var klContentsLabel: UILabel!
+    
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        knowledgeTitleLabel.text = knowledgeTitle[myIndex]
+        klContentsLabel.text = knowledgeContents
     }
-
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
