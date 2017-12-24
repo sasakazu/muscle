@@ -29,8 +29,8 @@
 		73E77A251FE4FFBB0026939A /* SignOutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E77A241FE4FFBB0026939A /* SignOutVC.swift */; };
 		73E77A271FE510560026939A /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E77A261FE510560026939A /* AlertController.swift */; };
 		73E77A2C1FE90CBF0026939A /* acountEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E77A2B1FE90CBF0026939A /* acountEditVC.swift */; };
-		73E77A301FEBCA850026939A /* knowTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E77A2F1FEBCA850026939A /* knowTableViewController.swift */; };
-		73E77A321FEBCAC00026939A /* knowSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E77A311FEBCAC00026939A /* knowSecondViewController.swift */; };
+		73E77A611FEFAEA50026939A /* knowTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E77A601FEFAEA50026939A /* knowTableViewController.swift */; };
+		73E77A651FEFB4770026939A /* knowDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E77A641FEFB4770026939A /* knowDetailVC.swift */; };
 		79312D59879CE63E53B8A23C /* Pods_muscle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0666D78A335AF68A35FFA108 /* Pods_muscle.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,8 +61,8 @@
 		73E77A241FE4FFBB0026939A /* SignOutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignOutVC.swift; path = /Users/sasakurakazuya/Dropbox/ios/muscle/muscle/user/SignOutVC.swift; sourceTree = "<absolute>"; };
 		73E77A261FE510560026939A /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
 		73E77A2B1FE90CBF0026939A /* acountEditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = acountEditVC.swift; sourceTree = "<group>"; };
-		73E77A2F1FEBCA850026939A /* knowTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = knowTableViewController.swift; sourceTree = "<group>"; };
-		73E77A311FEBCAC00026939A /* knowSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = knowSecondViewController.swift; sourceTree = "<group>"; };
+		73E77A601FEFAEA50026939A /* knowTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = knowTableViewController.swift; path = ../knowTableViewController.swift; sourceTree = "<group>"; };
+		73E77A641FEFB4770026939A /* knowDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = knowDetailVC.swift; sourceTree = "<group>"; };
 		8A252D6DF0E58ADB69478BB6 /* Pods-muscle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-muscle.release.xcconfig"; path = "Pods/Target Support Files/Pods-muscle/Pods-muscle.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -171,8 +171,8 @@
 		73E77A2A1FE8F76B0026939A /* knowledge */ = {
 			isa = PBXGroup;
 			children = (
-				73E77A2F1FEBCA850026939A /* knowTableViewController.swift */,
-				73E77A311FEBCAC00026939A /* knowSecondViewController.swift */,
+				73E77A601FEFAEA50026939A /* knowTableViewController.swift */,
+				73E77A641FEFB4770026939A /* knowDetailVC.swift */,
 			);
 			path = knowledge;
 			sourceTree = "<group>";
@@ -323,10 +323,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73E77A611FEFAEA50026939A /* knowTableViewController.swift in Sources */,
 				73E77A271FE510560026939A /* AlertController.swift in Sources */,
-				73E77A321FEBCAC00026939A /* knowSecondViewController.swift in Sources */,
 				73450D361FC3DB3200E09B9B /* ViewController.swift in Sources */,
 				73E77A1F1FE4FEAC0026939A /* SigninVC.swift in Sources */,
+				73E77A651FEFB4770026939A /* knowDetailVC.swift in Sources */,
 				73E77A211FE4FF270026939A /* SignUpVC.swift in Sources */,
 				739B496B1FD6A4A2006F0C2D /* muscleMenuEditViewController.swift in Sources */,
 				73CC02321FD94D4300F59F6A /* calorieViewController.swift in Sources */,
@@ -336,7 +337,6 @@
 				73E77A2C1FE90CBF0026939A /* acountEditVC.swift in Sources */,
 				739B496D1FD936CD006F0C2D /* timeLineViewController.swift in Sources */,
 				739B49671FD6A40E006F0C2D /* muscleMenuViewController.swift in Sources */,
-				73E77A301FEBCA850026939A /* knowTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

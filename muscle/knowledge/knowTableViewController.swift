@@ -12,6 +12,8 @@ import UIKit
 
 class knowTableViewController: UITableViewController {
     
+      var selectedText: String?
+    
     
     var knowSection = ["section1","section2","section3","section4","section5","section6","section7"]
 
@@ -47,15 +49,21 @@ class knowTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-       
-       performSegue(withIdentifier: "segue", sender: self)
+        selectedText = knowTitle[indexPath.row]
+        
+        performSegue(withIdentifier: "segue", sender: self)
        
     }
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        <#code#>
-//    }
-// 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "segue") {
+            let secondVC: knowSecondViewController = (segue.destination as? knowSecondViewController)!
+            
+            // 11. SecondViewControllerのtextに選択した文字列を設定する
+            secondVC.text = selectedText
+        }
+    }
+ 
 
     
     
