@@ -12,16 +12,17 @@ class knowDetailVC: UIViewController {
     
     
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var detailTextView: UITextView!
     
  
-    @IBOutlet weak var descLabel: UILabel!
+//    @IBOutlet weak var descLabel: UILabel!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         titleLabel.text = knowTitle[myIndex]
-        descLabel.text = knowDesc[myIndex]
+        detailTextView.text = knowDesc[myIndex]
         
     }
     
