@@ -8,14 +8,25 @@
 
 import UIKit
 import Firebase
+import GoogleSignIn
 
 
-
-class SignInVC: UIViewController {
+class SignInVC: UIViewController , GIDSignInUIDelegate{
     
     
     @IBOutlet weak var emailTF: UITextField!
     @IBOutlet weak var passwordTF: UITextField!
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        GIDSignIn.sharedInstance().uiDelegate = self
+        GIDSignIn.sharedInstance().signIn()
+        
+        // TODO(developer) Configure the sign-in button look/feel
+        // ...
+    }
     
     
     
