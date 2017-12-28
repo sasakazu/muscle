@@ -31,6 +31,7 @@
 		73E77A2C1FE90CBF0026939A /* acountEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E77A2B1FE90CBF0026939A /* acountEditVC.swift */; };
 		73E77A611FEFAEA50026939A /* knowTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E77A601FEFAEA50026939A /* knowTableViewController.swift */; };
 		73E77A651FEFB4770026939A /* knowDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E77A641FEFB4770026939A /* knowDetailVC.swift */; };
+		73E77A881FF4EEDD0026939A /* moreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E77A871FF4EEDD0026939A /* moreViewController.swift */; };
 		79312D59879CE63E53B8A23C /* Pods_muscle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0666D78A335AF68A35FFA108 /* Pods_muscle.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +64,7 @@
 		73E77A2B1FE90CBF0026939A /* acountEditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = acountEditVC.swift; sourceTree = "<group>"; };
 		73E77A601FEFAEA50026939A /* knowTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = knowTableViewController.swift; path = ../knowTableViewController.swift; sourceTree = "<group>"; };
 		73E77A641FEFB4770026939A /* knowDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = knowDetailVC.swift; sourceTree = "<group>"; };
+		73E77A871FF4EEDD0026939A /* moreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moreViewController.swift; sourceTree = "<group>"; };
 		8A252D6DF0E58ADB69478BB6 /* Pods-muscle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-muscle.release.xcconfig"; path = "Pods/Target Support Files/Pods-muscle/Pods-muscle.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -124,6 +126,7 @@
 				73E77A261FE510560026939A /* AlertController.swift */,
 				73CC02311FD94D4300F59F6A /* calorieViewController.swift */,
 				73450D371FC3DB3200E09B9B /* Main.storyboard */,
+				73E77A871FF4EEDD0026939A /* moreViewController.swift */,
 				739B496C1FD936CD006F0C2D /* timeLineViewController.swift */,
 				73450D3A1FC3DB3200E09B9B /* Assets.xcassets */,
 				73450D3C1FC3DB3200E09B9B /* LaunchScreen.storyboard */,
@@ -336,6 +339,7 @@
 				73E77A211FE4FF270026939A /* SignUpVC.swift in Sources */,
 				739B496B1FD6A4A2006F0C2D /* muscleMenuEditViewController.swift in Sources */,
 				73CC02321FD94D4300F59F6A /* calorieViewController.swift in Sources */,
+				73E77A881FF4EEDD0026939A /* moreViewController.swift in Sources */,
 				739B49691FD6A453006F0C2D /* muscleMenuAddViewController.swift in Sources */,
 				73450D341FC3DB3100E09B9B /* AppDelegate.swift in Sources */,
 				73E77A251FE4FFBB0026939A /* SignOutVC.swift in Sources */,

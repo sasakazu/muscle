@@ -9,11 +9,14 @@ target 'muscle' do
 
  pod 'FSCalendar'
  pod 'CalculateCalendarLogic'
+ 
  pod 'Firebase/Database'
  pod 'Firebase/Core'
  pod 'Firebase/Auth'
  pod 'Firebase/Storage'
  pod 'GoogleSignIn'
+ pod 'Firebase/AdMob'
+ pod 'Google-Mobile-Ads-SDK'
  
  
 end

@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 import GoogleSignIn
+import GoogleMobileAds
 
 
 @UIApplicationMain
@@ -24,6 +25,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
         GIDSignIn.sharedInstance().delegate = self
         
+        GADMobileAds.configure(withApplicationID: "ca-app-pub-6579111049596937~9157728003")
+    
         return true
 
     }
