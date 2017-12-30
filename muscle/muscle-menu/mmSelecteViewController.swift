@@ -32,6 +32,8 @@ class mmSelecteViewController: UIViewController, UITableViewDelegate, UITableVie
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // trueで複数選択、falseで単一選択
+        mmSelecteTableview.allowsMultipleSelection = true
 
     }
     
@@ -106,9 +108,17 @@ class mmSelecteViewController: UIViewController, UITableViewDelegate, UITableVie
     
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cell = tableView.cellForRow(at:indexPath)
         
+        cell?.accessoryType = .checkmark
     }
     
+    
+    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        let cell = tableView.cellForRow(at:indexPath)
+        
+        cell?.accessoryType = .none
+    }
     
 
     
