@@ -146,7 +146,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p23-qx-gl8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-802.39999999999998" y="1065.5172413793105"/>
+            <point key="canvasLocation" x="-338" y="1029"/>
+        </scene>
+        <!--チャット-->
+        <scene sceneID="eDn-HT-2vJ">
+            <objects>
+                <viewController id="Akv-RT-sCT" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="n2F-Yg-Qqd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="L1U-x2-HZI"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="チャット" image="timeline.png" selectedImage="timeline.png" id="lk5-OW-xei"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z0j-5h-AHs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1223" y="1029"/>
         </scene>
         <!--Calorie View Controller-->
         <scene sceneID="Vyl-Gw-dn3">
@@ -234,7 +250,7 @@
         <scene sceneID="NKl-fg-J3v">
             <objects>
                 <viewController id="YCa-e3-xTG" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="C01-Of-dJJ" customClass="FSCalendar">
+                    <view key="view" contentMode="scaleToFill" id="C01-Of-dJJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -248,9 +264,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SDH-UR-onD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="230" y="1066"/>
+            <point key="canvasLocation" x="441" y="922"/>
         </scene>
-        <!--タイムライン-->
+        <!--ホーム-->
         <scene sceneID="ANx-sK-mNb">
             <objects>
                 <viewController id="xS6-Qx-SSD" customClass="timeLineViewController" customModule="muscle" customModuleProvider="target" sceneMemberID="viewController">
@@ -323,7 +339,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2AM-Ja-RWp"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="タイムライン" image="timeline.png" id="HRB-A3-XLo"/>
+                    <tabBarItem key="tabBarItem" title="ホーム" image="home.png" selectedImage="home.png" id="HRB-A3-XLo"/>
                     <connections>
                         <outlet property="table" destination="P31-jF-ZAC" id="Dut-fw-Rsl"/>
                     </connections>
@@ -643,6 +659,7 @@
                         <segue destination="xS6-Qx-SSD" kind="relationship" relationship="viewControllers" id="vsL-9i-Oci"/>
                         <segue destination="aCP-hT-DLj" kind="relationship" relationship="viewControllers" id="p1h-Hd-MMU"/>
                         <segue destination="YCa-e3-xTG" kind="relationship" relationship="viewControllers" id="Xly-2t-DlY"/>
+                        <segue destination="Akv-RT-sCT" kind="relationship" relationship="viewControllers" id="8AW-5a-VUp"/>
                         <segue destination="aYd-E5-pdU" kind="relationship" relationship="viewControllers" id="nYw-JW-6E3"/>
                         <segue destination="02B-Q6-PO4" kind="relationship" relationship="viewControllers" id="U53-zM-WtD"/>
                     </connections>
@@ -717,12 +734,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="メニューネーム" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n47-R4-g81">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="メニューの名前記入" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n47-R4-g81">
                                 <rect key="frame" x="16" y="166" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" spellCheckingType="no" returnKeyType="done"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tG6-qp-9ju">
                                 <rect key="frame" x="260" y="361" width="99" height="34"/>
@@ -804,6 +821,7 @@
     <resources>
         <image name="brain2.png" width="32" height="32"/>
         <image name="diary.png" width="32" height="32"/>
+        <image name="home.png" width="32" height="32"/>
         <image name="menu.png" width="32" height="32"/>
         <image name="timeline.png" width="32" height="32"/>
     </resources>

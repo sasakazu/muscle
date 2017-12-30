@@ -11,6 +11,7 @@
 		7334452C1FF78ACF00F9A5BD /* mmMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7334452B1FF78ACF00F9A5BD /* mmMainViewController.swift */; };
 		7334452E1FF78AE600F9A5BD /* mmNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7334452D1FF78AE600F9A5BD /* mmNameViewController.swift */; };
 		733445301FF78B0900F9A5BD /* mmSelecteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7334452F1FF78B0900F9A5BD /* mmSelecteViewController.swift */; };
+		733445341FF7AA0C00F9A5BD /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 733445331FF7AA0C00F9A5BD /* home.png */; };
 		73450D341FC3DB3100E09B9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73450D331FC3DB3100E09B9B /* AppDelegate.swift */; };
 		73450D361FC3DB3200E09B9B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73450D351FC3DB3200E09B9B /* ViewController.swift */; };
 		73450D391FC3DB3200E09B9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73450D371FC3DB3200E09B9B /* Main.storyboard */; };
@@ -21,7 +22,6 @@
 		7379962A1FCD5C5200591A73 /* diary.png in Resources */ = {isa = PBXBuildFile; fileRef = 737996291FCD5C5200591A73 /* diary.png */; };
 		7379962C1FCD5CB200591A73 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 7379962B1FCD5CB200591A73 /* menu.png */; };
 		7379962E1FCD5D5E00591A73 /* timeline.png in Resources */ = {isa = PBXBuildFile; fileRef = 7379962D1FCD5D5E00591A73 /* timeline.png */; };
-		737996321FCD785000591A73 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 737996311FCD785000591A73 /* home.png */; };
 		739B496D1FD936CD006F0C2D /* timeLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739B496C1FD936CD006F0C2D /* timeLineViewController.swift */; };
 		73CC02321FD94D4300F59F6A /* calorieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CC02311FD94D4300F59F6A /* calorieViewController.swift */; };
 		73E77A1F1FE4FEAC0026939A /* SigninVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E77A1E1FE4FEAC0026939A /* SigninVC.swift */; };
@@ -42,6 +42,7 @@
 		7334452B1FF78ACF00F9A5BD /* mmMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mmMainViewController.swift; sourceTree = "<group>"; };
 		7334452D1FF78AE600F9A5BD /* mmNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mmNameViewController.swift; sourceTree = "<group>"; };
 		7334452F1FF78B0900F9A5BD /* mmSelecteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mmSelecteViewController.swift; sourceTree = "<group>"; };
+		733445331FF7AA0C00F9A5BD /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home.png; path = ../../../../../Downloads/home.png; sourceTree = "<group>"; };
 		73450D301FC3DB3100E09B9B /* muscle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = muscle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73450D331FC3DB3100E09B9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73450D351FC3DB3200E09B9B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,7 +55,6 @@
 		737996291FCD5C5200591A73 /* diary.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = diary.png; sourceTree = "<group>"; };
 		7379962B1FCD5CB200591A73 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
 		7379962D1FCD5D5E00591A73 /* timeline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = timeline.png; sourceTree = "<group>"; };
-		737996311FCD785000591A73 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
 		739B496C1FD936CD006F0C2D /* timeLineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timeLineViewController.swift; sourceTree = "<group>"; };
 		73CC02311FD94D4300F59F6A /* calorieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calorieViewController.swift; sourceTree = "<group>"; };
 		73E77A1E1FE4FEAC0026939A /* SigninVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninVC.swift; sourceTree = "<group>"; };
@@ -142,9 +142,9 @@
 			children = (
 				7379962D1FCD5D5E00591A73 /* timeline.png */,
 				7379962B1FCD5CB200591A73 /* menu.png */,
+				733445331FF7AA0C00F9A5BD /* home.png */,
 				737996291FCD5C5200591A73 /* diary.png */,
 				737996271FCD5BE200591A73 /* brain2.png */,
-				737996311FCD785000591A73 /* home.png */,
 				737996251FCD5B9400591A73 /* brain.png */,
 			);
 			path = images;
@@ -244,11 +244,11 @@
 			files = (
 				737996261FCD5B9400591A73 /* brain.png in Resources */,
 				7379962A1FCD5C5200591A73 /* diary.png in Resources */,
-				737996321FCD785000591A73 /* home.png in Resources */,
 				737996281FCD5BE200591A73 /* brain2.png in Resources */,
 				73450D3E1FC3DB3200E09B9B /* LaunchScreen.storyboard in Resources */,
 				7379962C1FCD5CB200591A73 /* menu.png in Resources */,
 				73450D3B1FC3DB3200E09B9B /* Assets.xcassets in Resources */,
+				733445341FF7AA0C00F9A5BD /* home.png in Resources */,
 				73341D2D1FDBE69700FD98FA /* GoogleService-Info.plist in Resources */,
 				7379962E1FCD5D5E00591A73 /* timeline.png in Resources */,
 				73450D391FC3DB3200E09B9B /* Main.storyboard in Resources */,
