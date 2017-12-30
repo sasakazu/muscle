@@ -146,7 +146,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p23-qx-gl8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-338" y="1029"/>
+            <point key="canvasLocation" x="-6" y="1017"/>
         </scene>
         <!--チャット-->
         <scene sceneID="eDn-HT-2vJ">
@@ -246,25 +246,30 @@
             </objects>
             <point key="canvasLocation" x="1641" y="656"/>
         </scene>
-        <!--Data Source-->
+        <!--Diary-->
         <scene sceneID="NKl-fg-J3v">
             <objects>
                 <viewController id="YCa-e3-xTG" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="C01-Of-dJJ">
+                    <view key="view" contentMode="scaleToFill" id="Sfu-AH-h2K">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XPS-hu-RCF">
+                                <rect key="frame" x="166" y="286" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="MQU-z6-MSh"/>
-                        <connections>
-                            <outlet property="dataSource" destination="YCa-e3-xTG" id="Gns-de-npb"/>
-                            <outlet property="delegate" destination="YCa-e3-xTG" id="ru3-lx-Z6z"/>
-                        </connections>
+                        <viewLayoutGuide key="safeArea" id="eaT-tG-get"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Diary" image="diary.png" id="NzS-aI-fv2"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SDH-UR-onD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="441" y="922"/>
+            <point key="canvasLocation" x="151" y="131"/>
         </scene>
         <!--ホーム-->
         <scene sceneID="ANx-sK-mNb">
@@ -275,7 +280,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="P31-jF-ZAC">
-                                <rect key="frame" x="0.0" y="106" width="375" height="512"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="574"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
@@ -313,30 +318,18 @@
                                     <outlet property="delegate" destination="xS6-Qx-SSD" id="rU4-ll-JwZ"/>
                                 </connections>
                             </tableView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NKO-r2-WO3">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="27"/>
-                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="27" id="tAa-gq-EF4"/>
-                                </constraints>
-                            </view>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" largeTitles="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xmi-N3-7YX">
-                                <rect key="frame" x="0.0" y="27" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <items>
-                                    <navigationItem title="TimeLine" id="Rk5-lg-p4E">
+                                    <navigationItem title="Home" id="Rk5-lg-p4E">
                                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="2mm-Xz-0Af"/>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="NKO-r2-WO3" firstAttribute="trailing" secondItem="2AM-Ja-RWp" secondAttribute="trailing" id="PZb-at-Oq3"/>
-                            <constraint firstItem="NKO-r2-WO3" firstAttribute="top" secondItem="etU-ID-Zdr" secondAttribute="top" id="jzq-RA-y0o"/>
-                            <constraint firstItem="NKO-r2-WO3" firstAttribute="leading" secondItem="2AM-Ja-RWp" secondAttribute="leading" id="wjZ-f9-pXo"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="2AM-Ja-RWp"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="ホーム" image="home.png" selectedImage="home.png" id="HRB-A3-XLo"/>
@@ -346,7 +339,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wrn-lz-ME6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="133.59999999999999" y="130.88455772113943"/>
+            <point key="canvasLocation" x="-802.39999999999998" y="-647.22638680659679"/>
         </scene>
         <!--Sign InVC-->
         <scene sceneID="iVK-DU-dxl">
