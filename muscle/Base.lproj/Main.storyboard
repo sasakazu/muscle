@@ -693,7 +693,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="mpk-oi-pdC">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="mmMainCell" id="mpk-oi-pdC">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mpk-oi-pdC" id="ye4-oc-M2C">
@@ -702,18 +702,31 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Vcq-ZB-WX0" id="1lY-gf-Ntc"/>
+                                    <outlet property="delegate" destination="Vcq-ZB-WX0" id="UCG-lN-E6u"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="1oF-yM-bvw"/>
                     </view>
                     <navigationItem key="navigationItem" id="J9n-Fg-sBC">
+                        <barButtonItem key="leftBarButtonItem" title="Edit" id="LzC-B5-Lrt">
+                            <connections>
+                                <action selector="mmMainEdtitActionBtn:" destination="Vcq-ZB-WX0" id="MUN-Hv-Fzy"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="1cX-vF-6mh">
                             <connections>
                                 <segue destination="zMJ-Bq-vVp" kind="show" id="cPZ-Bv-UAq"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="mmMainEditBtn" destination="LzC-B5-Lrt" id="hOZ-7J-0tD"/>
+                        <outlet property="mmMainTableView" destination="MME-bf-f2d" id="2zw-Oi-nFY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tJ1-Cp-QvV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
