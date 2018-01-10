@@ -25,6 +25,10 @@
 		7379962C1FCD5CB200591A73 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 7379962B1FCD5CB200591A73 /* menu.png */; };
 		7379962E1FCD5D5E00591A73 /* timeline.png in Resources */ = {isa = PBXBuildFile; fileRef = 7379962D1FCD5D5E00591A73 /* timeline.png */; };
 		739B496D1FD936CD006F0C2D /* timeLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739B496C1FD936CD006F0C2D /* timeLineViewController.swift */; };
+		73A3B7B420062AE100B4D70A /* img1.png in Resources */ = {isa = PBXBuildFile; fileRef = 73A3B7B020062ADF00B4D70A /* img1.png */; };
+		73A3B7B520062AE100B4D70A /* img4.png in Resources */ = {isa = PBXBuildFile; fileRef = 73A3B7B120062AE000B4D70A /* img4.png */; };
+		73A3B7B620062AE100B4D70A /* img2.png in Resources */ = {isa = PBXBuildFile; fileRef = 73A3B7B220062AE000B4D70A /* img2.png */; };
+		73A3B7B720062AE100B4D70A /* img3.png in Resources */ = {isa = PBXBuildFile; fileRef = 73A3B7B320062AE100B4D70A /* img3.png */; };
 		73CC02321FD94D4300F59F6A /* calorieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CC02311FD94D4300F59F6A /* calorieViewController.swift */; };
 		73E77A1F1FE4FEAC0026939A /* SigninVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E77A1E1FE4FEAC0026939A /* SigninVC.swift */; };
 		73E77A211FE4FF270026939A /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E77A201FE4FF270026939A /* SignUpVC.swift */; };
@@ -60,6 +64,10 @@
 		7379962B1FCD5CB200591A73 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
 		7379962D1FCD5D5E00591A73 /* timeline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = timeline.png; sourceTree = "<group>"; };
 		739B496C1FD936CD006F0C2D /* timeLineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timeLineViewController.swift; sourceTree = "<group>"; };
+		73A3B7B020062ADF00B4D70A /* img1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img1.png; sourceTree = "<group>"; };
+		73A3B7B120062AE000B4D70A /* img4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img4.png; sourceTree = "<group>"; };
+		73A3B7B220062AE000B4D70A /* img2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img2.png; sourceTree = "<group>"; };
+		73A3B7B320062AE100B4D70A /* img3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img3.png; sourceTree = "<group>"; };
 		73CC02311FD94D4300F59F6A /* calorieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calorieViewController.swift; sourceTree = "<group>"; };
 		73E77A1E1FE4FEAC0026939A /* SigninVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninVC.swift; sourceTree = "<group>"; };
 		73E77A201FE4FF270026939A /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
@@ -157,6 +165,10 @@
 				734B23351FFE32E2007A3586 /* time.png */,
 				7379962B1FCD5CB200591A73 /* menu.png */,
 				733445331FF7AA0C00F9A5BD /* home.png */,
+				73A3B7B020062ADF00B4D70A /* img1.png */,
+				73A3B7B220062AE000B4D70A /* img2.png */,
+				73A3B7B320062AE100B4D70A /* img3.png */,
+				73A3B7B120062AE000B4D70A /* img4.png */,
 				737996291FCD5C5200591A73 /* diary.png */,
 				737996271FCD5BE200591A73 /* brain2.png */,
 				737996251FCD5B9400591A73 /* brain.png */,
@@ -261,9 +273,13 @@
 				737996281FCD5BE200591A73 /* brain2.png in Resources */,
 				73450D3E1FC3DB3200E09B9B /* LaunchScreen.storyboard in Resources */,
 				7379962C1FCD5CB200591A73 /* menu.png in Resources */,
+				73A3B7B420062AE100B4D70A /* img1.png in Resources */,
+				73A3B7B620062AE100B4D70A /* img2.png in Resources */,
 				73450D3B1FC3DB3200E09B9B /* Assets.xcassets in Resources */,
+				73A3B7B520062AE100B4D70A /* img4.png in Resources */,
 				733445341FF7AA0C00F9A5BD /* home.png in Resources */,
 				73341D2D1FDBE69700FD98FA /* GoogleService-Info.plist in Resources */,
+				73A3B7B720062AE100B4D70A /* img3.png in Resources */,
 				7379962E1FCD5D5E00591A73 /* timeline.png in Resources */,
 				734B23361FFE32E3007A3586 /* time.png in Resources */,
 				73450D391FC3DB3200E09B9B /* Main.storyboard in Resources */,
