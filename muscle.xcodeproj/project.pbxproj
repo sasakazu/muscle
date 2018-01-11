@@ -29,6 +29,7 @@
 		73A3B7B520062AE100B4D70A /* img4.png in Resources */ = {isa = PBXBuildFile; fileRef = 73A3B7B120062AE000B4D70A /* img4.png */; };
 		73A3B7B620062AE100B4D70A /* img2.png in Resources */ = {isa = PBXBuildFile; fileRef = 73A3B7B220062AE000B4D70A /* img2.png */; };
 		73A3B7B720062AE100B4D70A /* img3.png in Resources */ = {isa = PBXBuildFile; fileRef = 73A3B7B320062AE100B4D70A /* img3.png */; };
+		73A3B7B920077BDD00B4D70A /* timelineAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A3B7B820077BDD00B4D70A /* timelineAddViewController.swift */; };
 		73CC02321FD94D4300F59F6A /* calorieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CC02311FD94D4300F59F6A /* calorieViewController.swift */; };
 		73E77A1F1FE4FEAC0026939A /* SigninVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E77A1E1FE4FEAC0026939A /* SigninVC.swift */; };
 		73E77A211FE4FF270026939A /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E77A201FE4FF270026939A /* SignUpVC.swift */; };
@@ -68,6 +69,7 @@
 		73A3B7B120062AE000B4D70A /* img4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img4.png; sourceTree = "<group>"; };
 		73A3B7B220062AE000B4D70A /* img2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img2.png; sourceTree = "<group>"; };
 		73A3B7B320062AE100B4D70A /* img3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img3.png; sourceTree = "<group>"; };
+		73A3B7B820077BDD00B4D70A /* timelineAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timelineAddViewController.swift; sourceTree = "<group>"; };
 		73CC02311FD94D4300F59F6A /* calorieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calorieViewController.swift; sourceTree = "<group>"; };
 		73E77A1E1FE4FEAC0026939A /* SigninVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninVC.swift; sourceTree = "<group>"; };
 		73E77A201FE4FF270026939A /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				739B496C1FD936CD006F0C2D /* timeLineViewController.swift */,
+				73A3B7B820077BDD00B4D70A /* timelineAddViewController.swift */,
 			);
 			path = timeline;
 			sourceTree = "<group>";
@@ -368,6 +371,7 @@
 				73E77A1F1FE4FEAC0026939A /* SigninVC.swift in Sources */,
 				734B233920036C56007A3586 /* calenderViewController.swift in Sources */,
 				7334452C1FF78ACF00F9A5BD /* mmMainViewController.swift in Sources */,
+				73A3B7B920077BDD00B4D70A /* timelineAddViewController.swift in Sources */,
 				733445301FF78B0900F9A5BD /* mmSelecteViewController.swift in Sources */,
 				7334452E1FF78AE600F9A5BD /* mmNameViewController.swift in Sources */,
 				73E77A651FEFB4770026939A /* knowDetailVC.swift in Sources */,
