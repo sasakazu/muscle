@@ -7,15 +7,15 @@
 //
 
 import UIKit
+import MobileCoreServices
 
 class timelineAddViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
+    
+    
     @IBOutlet weak var timelineTextView: UITextView!
-    
     @IBOutlet weak var timelineImage: UIImageView!
-    
     @IBOutlet weak var tlAddLabel: UILabel!
-    
     
     
     override func viewDidLoad() {
@@ -41,6 +41,40 @@ class timelineAddViewController: UIViewController, UIImagePickerControllerDelega
             tlAddLabel.text = "error"
         }
     }
+    
+    @IBAction func tlAddMovie(_ sender: Any) {
+        // カメラロールを表示
+        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera) {
+            let controller = UIImagePickerController()
+            controller.sourceType = UIImagePickerControllerSourceType.camera
+            controller.mediaTypes=[kUTTypeMovie as String] // 動画のみ
+            controller.delegate = self
+            
+            self.present(controller, animated: true, completion: nil)
+        }
+    }
+    
+    
+    func imagePickerController(picker: UIImagePickerController!, didFinishPickingMediaWithInfo info:NSDictionary!) {
+        picker.dismiss(animated: true, completion: nil)
+        
+        if let url = info[UIImagePickerControllerMediaURL] as? NSURL {
+            // 端末のカメラロールに保存する
+            UISaveVideoAtPathToSavedPhotosAlbum(url.path!, self, Selector(("video:didFinishSavingWithError:contextInfo:")), nil)
+        }
+    }
+    
+  
+    func video(videoPath: String, didFinishSavingWithError error: NSError!, contextInfo: UnsafeMutableRawPointer) {
+        if (error != nil) {
+            print ("動画の保存に失敗しました。")
+        } else {
+            print ("動画の保存に成功しました。")
+        }
+    }
+
+    
+    
     
     
     @IBAction func tlSaveBtn(_ sender: Any) {

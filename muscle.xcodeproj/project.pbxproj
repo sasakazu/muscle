@@ -30,6 +30,7 @@
 		73A3B7B620062AE100B4D70A /* img2.png in Resources */ = {isa = PBXBuildFile; fileRef = 73A3B7B220062AE000B4D70A /* img2.png */; };
 		73A3B7B720062AE100B4D70A /* img3.png in Resources */ = {isa = PBXBuildFile; fileRef = 73A3B7B320062AE100B4D70A /* img3.png */; };
 		73A3B7B920077BDD00B4D70A /* timelineAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A3B7B820077BDD00B4D70A /* timelineAddViewController.swift */; };
+		73A3B7BD200A15B300B4D70A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73A3B7BC200A15B300B4D70A /* MobileCoreServices.framework */; };
 		73CC02321FD94D4300F59F6A /* calorieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CC02311FD94D4300F59F6A /* calorieViewController.swift */; };
 		73E77A1F1FE4FEAC0026939A /* SigninVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E77A1E1FE4FEAC0026939A /* SigninVC.swift */; };
 		73E77A211FE4FF270026939A /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E77A201FE4FF270026939A /* SignUpVC.swift */; };
@@ -70,6 +71,7 @@
 		73A3B7B220062AE000B4D70A /* img2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img2.png; sourceTree = "<group>"; };
 		73A3B7B320062AE100B4D70A /* img3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img3.png; sourceTree = "<group>"; };
 		73A3B7B820077BDD00B4D70A /* timelineAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timelineAddViewController.swift; sourceTree = "<group>"; };
+		73A3B7BC200A15B300B4D70A /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		73CC02311FD94D4300F59F6A /* calorieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calorieViewController.swift; sourceTree = "<group>"; };
 		73E77A1E1FE4FEAC0026939A /* SigninVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninVC.swift; sourceTree = "<group>"; };
 		73E77A201FE4FF270026939A /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73A3B7BD200A15B300B4D70A /* MobileCoreServices.framework in Frameworks */,
 				79312D59879CE63E53B8A23C /* Pods_muscle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -97,6 +100,7 @@
 		41D2379A332F2914E901F0E8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				73A3B7BC200A15B300B4D70A /* MobileCoreServices.framework */,
 				0666D78A335AF68A35FFA108 /* Pods_muscle.framework */,
 			);
 			name = Frameworks;
