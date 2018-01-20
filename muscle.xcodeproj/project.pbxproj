@@ -19,6 +19,9 @@
 		73450D3E1FC3DB3200E09B9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73450D3C1FC3DB3200E09B9B /* LaunchScreen.storyboard */; };
 		734B23361FFE32E3007A3586 /* time.png in Resources */ = {isa = PBXBuildFile; fileRef = 734B23351FFE32E2007A3586 /* time.png */; };
 		734B233920036C56007A3586 /* calenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734B233820036C56007A3586 /* calenderViewController.swift */; };
+		736EA1232013432B00BFE690 /* signUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736EA1222013432B00BFE690 /* signUpViewController.swift */; };
+		736EA1272013438400BFE690 /* logInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736EA1262013438400BFE690 /* logInViewController.swift */; };
+		736EA129201343A400BFE690 /* resetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736EA128201343A400BFE690 /* resetPasswordViewController.swift */; };
 		737996261FCD5B9400591A73 /* brain.png in Resources */ = {isa = PBXBuildFile; fileRef = 737996251FCD5B9400591A73 /* brain.png */; };
 		737996281FCD5BE200591A73 /* brain2.png in Resources */ = {isa = PBXBuildFile; fileRef = 737996271FCD5BE200591A73 /* brain2.png */; };
 		7379962A1FCD5C5200591A73 /* diary.png in Resources */ = {isa = PBXBuildFile; fileRef = 737996291FCD5C5200591A73 /* diary.png */; };
@@ -32,11 +35,7 @@
 		73A3B7B920077BDD00B4D70A /* timelineAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A3B7B820077BDD00B4D70A /* timelineAddViewController.swift */; };
 		73A3B7BD200A15B300B4D70A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73A3B7BC200A15B300B4D70A /* MobileCoreServices.framework */; };
 		73CC02321FD94D4300F59F6A /* calorieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CC02311FD94D4300F59F6A /* calorieViewController.swift */; };
-		73E77A1F1FE4FEAC0026939A /* SigninVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E77A1E1FE4FEAC0026939A /* SigninVC.swift */; };
-		73E77A211FE4FF270026939A /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E77A201FE4FF270026939A /* SignUpVC.swift */; };
-		73E77A251FE4FFBB0026939A /* SignOutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E77A241FE4FFBB0026939A /* SignOutVC.swift */; };
 		73E77A271FE510560026939A /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E77A261FE510560026939A /* AlertController.swift */; };
-		73E77A2C1FE90CBF0026939A /* acountEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E77A2B1FE90CBF0026939A /* acountEditVC.swift */; };
 		73E77A611FEFAEA50026939A /* knowTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E77A601FEFAEA50026939A /* knowTableViewController.swift */; };
 		73E77A651FEFB4770026939A /* knowDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E77A641FEFB4770026939A /* knowDetailVC.swift */; };
 		73E77A881FF4EEDD0026939A /* moreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E77A871FF4EEDD0026939A /* moreViewController.swift */; };
@@ -60,6 +59,9 @@
 		73450D3F1FC3DB3200E09B9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		734B23351FFE32E2007A3586 /* time.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = time.png; sourceTree = "<group>"; };
 		734B233820036C56007A3586 /* calenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calenderViewController.swift; sourceTree = "<group>"; };
+		736EA1222013432B00BFE690 /* signUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpViewController.swift; sourceTree = "<group>"; };
+		736EA1262013438400BFE690 /* logInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logInViewController.swift; sourceTree = "<group>"; };
+		736EA128201343A400BFE690 /* resetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = resetPasswordViewController.swift; sourceTree = "<group>"; };
 		737996251FCD5B9400591A73 /* brain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brain.png; sourceTree = "<group>"; };
 		737996271FCD5BE200591A73 /* brain2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brain2.png; sourceTree = "<group>"; };
 		737996291FCD5C5200591A73 /* diary.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = diary.png; sourceTree = "<group>"; };
@@ -73,11 +75,7 @@
 		73A3B7B820077BDD00B4D70A /* timelineAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timelineAddViewController.swift; sourceTree = "<group>"; };
 		73A3B7BC200A15B300B4D70A /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		73CC02311FD94D4300F59F6A /* calorieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calorieViewController.swift; sourceTree = "<group>"; };
-		73E77A1E1FE4FEAC0026939A /* SigninVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninVC.swift; sourceTree = "<group>"; };
-		73E77A201FE4FF270026939A /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
-		73E77A241FE4FFBB0026939A /* SignOutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignOutVC.swift; path = /Users/sasakurakazuya/Dropbox/ios/muscle/muscle/user/SignOutVC.swift; sourceTree = "<absolute>"; };
 		73E77A261FE510560026939A /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
-		73E77A2B1FE90CBF0026939A /* acountEditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = acountEditVC.swift; sourceTree = "<group>"; };
 		73E77A601FEFAEA50026939A /* knowTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = knowTableViewController.swift; path = ../knowTableViewController.swift; sourceTree = "<group>"; };
 		73E77A641FEFB4770026939A /* knowDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = knowDetailVC.swift; sourceTree = "<group>"; };
 		73E77A871FF4EEDD0026939A /* moreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moreViewController.swift; sourceTree = "<group>"; };
@@ -139,7 +137,7 @@
 				73450D331FC3DB3100E09B9B /* AppDelegate.swift */,
 				73E77A2A1FE8F76B0026939A /* knowledge */,
 				73E77A291FE8F73A0026939A /* muscle-menu */,
-				73E77A281FE8F7020026939A /* user */,
+				73E77A281FE8F7020026939A /* users */,
 				734B23371FFE336C007A3586 /* timeline */,
 				73450D351FC3DB3200E09B9B /* ViewController.swift */,
 				73E77A261FE510560026939A /* AlertController.swift */,
@@ -183,15 +181,14 @@
 			path = images;
 			sourceTree = "<group>";
 		};
-		73E77A281FE8F7020026939A /* user */ = {
+		73E77A281FE8F7020026939A /* users */ = {
 			isa = PBXGroup;
 			children = (
-				73E77A1E1FE4FEAC0026939A /* SigninVC.swift */,
-				73E77A201FE4FF270026939A /* SignUpVC.swift */,
-				73E77A241FE4FFBB0026939A /* SignOutVC.swift */,
-				73E77A2B1FE90CBF0026939A /* acountEditVC.swift */,
+				736EA1262013438400BFE690 /* logInViewController.swift */,
+				736EA1222013432B00BFE690 /* signUpViewController.swift */,
+				736EA128201343A400BFE690 /* resetPasswordViewController.swift */,
 			);
-			path = user;
+			path = users;
 			sourceTree = "<group>";
 		};
 		73E77A291FE8F73A0026939A /* muscle-menu */ = {
@@ -369,22 +366,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				736EA1232013432B00BFE690 /* signUpViewController.swift in Sources */,
 				73E77A611FEFAEA50026939A /* knowTableViewController.swift in Sources */,
 				73E77A271FE510560026939A /* AlertController.swift in Sources */,
+				736EA129201343A400BFE690 /* resetPasswordViewController.swift in Sources */,
 				73450D361FC3DB3200E09B9B /* ViewController.swift in Sources */,
-				73E77A1F1FE4FEAC0026939A /* SigninVC.swift in Sources */,
+				736EA1272013438400BFE690 /* logInViewController.swift in Sources */,
 				734B233920036C56007A3586 /* calenderViewController.swift in Sources */,
 				7334452C1FF78ACF00F9A5BD /* mmMainViewController.swift in Sources */,
 				73A3B7B920077BDD00B4D70A /* timelineAddViewController.swift in Sources */,
 				733445301FF78B0900F9A5BD /* mmSelecteViewController.swift in Sources */,
 				7334452E1FF78AE600F9A5BD /* mmNameViewController.swift in Sources */,
 				73E77A651FEFB4770026939A /* knowDetailVC.swift in Sources */,
-				73E77A211FE4FF270026939A /* SignUpVC.swift in Sources */,
 				73CC02321FD94D4300F59F6A /* calorieViewController.swift in Sources */,
 				73E77A881FF4EEDD0026939A /* moreViewController.swift in Sources */,
 				73450D341FC3DB3100E09B9B /* AppDelegate.swift in Sources */,
-				73E77A251FE4FFBB0026939A /* SignOutVC.swift in Sources */,
-				73E77A2C1FE90CBF0026939A /* acountEditVC.swift in Sources */,
 				739B496D1FD936CD006F0C2D /* timeLineViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
