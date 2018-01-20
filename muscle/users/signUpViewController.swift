@@ -27,6 +27,10 @@ class signUpViewController: UIViewController {
         
         Auth.auth().createUser(withEmail: emailTF.text!, password: passwordTF.text!) { (user, error) in
         
+            let next = self.storyboard!.instantiateViewController(withIdentifier: "nextView")
+            self.present(next,animated: true, completion: nil)
+            
+            
         }
   
         

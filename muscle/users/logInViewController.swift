@@ -47,6 +47,10 @@ class logInViewController: UIViewController {
                     
                     print("You have successfully logged in")
                     
+              
+                    let next = self.storyboard!.instantiateViewController(withIdentifier: "nextView")
+                    self.present(next,animated: true, completion: nil)
+                    
                     
                 } else {
                     

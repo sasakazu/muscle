@@ -21,7 +21,6 @@
 		734B233920036C56007A3586 /* calenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734B233820036C56007A3586 /* calenderViewController.swift */; };
 		736EA1232013432B00BFE690 /* signUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736EA1222013432B00BFE690 /* signUpViewController.swift */; };
 		736EA1272013438400BFE690 /* logInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736EA1262013438400BFE690 /* logInViewController.swift */; };
-		736EA129201343A400BFE690 /* resetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736EA128201343A400BFE690 /* resetPasswordViewController.swift */; };
 		737996261FCD5B9400591A73 /* brain.png in Resources */ = {isa = PBXBuildFile; fileRef = 737996251FCD5B9400591A73 /* brain.png */; };
 		737996281FCD5BE200591A73 /* brain2.png in Resources */ = {isa = PBXBuildFile; fileRef = 737996271FCD5BE200591A73 /* brain2.png */; };
 		7379962A1FCD5C5200591A73 /* diary.png in Resources */ = {isa = PBXBuildFile; fileRef = 737996291FCD5C5200591A73 /* diary.png */; };
@@ -61,7 +60,6 @@
 		734B233820036C56007A3586 /* calenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calenderViewController.swift; sourceTree = "<group>"; };
 		736EA1222013432B00BFE690 /* signUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpViewController.swift; sourceTree = "<group>"; };
 		736EA1262013438400BFE690 /* logInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logInViewController.swift; sourceTree = "<group>"; };
-		736EA128201343A400BFE690 /* resetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = resetPasswordViewController.swift; sourceTree = "<group>"; };
 		737996251FCD5B9400591A73 /* brain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brain.png; sourceTree = "<group>"; };
 		737996271FCD5BE200591A73 /* brain2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brain2.png; sourceTree = "<group>"; };
 		737996291FCD5C5200591A73 /* diary.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = diary.png; sourceTree = "<group>"; };
@@ -186,7 +184,6 @@
 			children = (
 				736EA1262013438400BFE690 /* logInViewController.swift */,
 				736EA1222013432B00BFE690 /* signUpViewController.swift */,
-				736EA128201343A400BFE690 /* resetPasswordViewController.swift */,
 			);
 			path = users;
 			sourceTree = "<group>";
@@ -369,7 +366,6 @@
 				736EA1232013432B00BFE690 /* signUpViewController.swift in Sources */,
 				73E77A611FEFAEA50026939A /* knowTableViewController.swift in Sources */,
 				73E77A271FE510560026939A /* AlertController.swift in Sources */,
-				736EA129201343A400BFE690 /* resetPasswordViewController.swift in Sources */,
 				73450D361FC3DB3200E09B9B /* ViewController.swift in Sources */,
 				736EA1272013438400BFE690 /* logInViewController.swift in Sources */,
 				734B233920036C56007A3586 /* calenderViewController.swift in Sources */,
