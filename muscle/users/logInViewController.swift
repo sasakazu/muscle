@@ -8,21 +8,27 @@
 
 import UIKit
 import Firebase
+import GoogleSignIn
 
 
 
-class logInViewController: UIViewController {
-
+class logInViewController: UIViewController, GIDSignInUIDelegate {
 
     @IBOutlet weak var emailTF: UITextField!
     @IBOutlet weak var passwordTF: UITextField!
     
-    
+    @IBOutlet weak var signInButton: GIDSignInButton!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
+        GIDSignIn.sharedInstance().uiDelegate = self as GIDSignInUIDelegate
+        GIDSignIn.sharedInstance().signIn()
+
+        
+        
     }
 
  
@@ -64,7 +70,11 @@ class logInViewController: UIViewController {
             }
         }
     }
-
+    
+  
+  
+    
 
 }
+
 

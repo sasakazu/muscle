@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lgD-DI-kdS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rR6-i7-Z6T">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -663,6 +663,16 @@
                                     <segue destination="82w-vc-19x" kind="show" id="Lap-sc-vuZ"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NCe-4t-Lee" customClass="GIDSignInButton">
+                                <rect key="frame" x="16" y="444" width="159" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hIo-Ev-ZGs">
+                                <rect key="frame" x="160" y="617" width="55" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Log Out"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="s0J-ow-cVf"/>
@@ -670,11 +680,12 @@
                     <connections>
                         <outlet property="emailTF" destination="tmc-7z-nfD" id="zHa-2B-oHW"/>
                         <outlet property="passwordTF" destination="rxd-Yo-1Tg" id="euT-xE-kSS"/>
+                        <outlet property="signInButton" destination="NCe-4t-Lee" id="z70-AK-Cat"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CoW-Wu-9hT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2562" y="131"/>
+            <point key="canvasLocation" x="-2562.4000000000001" y="130.88455772113943"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="TPv-Zp-ThQ">
@@ -870,7 +881,4 @@
         <image name="time.png" width="32" height="32"/>
         <image name="timeline.png" width="32" height="32"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="QEe-Ml-DHi"/>
-    </inferredMetricsTieBreakers>
 </document>
