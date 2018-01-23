@@ -18,7 +18,6 @@
 		73450D3B1FC3DB3200E09B9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73450D3A1FC3DB3200E09B9B /* Assets.xcassets */; };
 		73450D3E1FC3DB3200E09B9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73450D3C1FC3DB3200E09B9B /* LaunchScreen.storyboard */; };
 		734B23361FFE32E3007A3586 /* time.png in Resources */ = {isa = PBXBuildFile; fileRef = 734B23351FFE32E2007A3586 /* time.png */; };
-		734B233920036C56007A3586 /* calenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734B233820036C56007A3586 /* calenderViewController.swift */; };
 		736EA1232013432B00BFE690 /* signUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736EA1222013432B00BFE690 /* signUpViewController.swift */; };
 		736EA1272013438400BFE690 /* logInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736EA1262013438400BFE690 /* logInViewController.swift */; };
 		737996261FCD5B9400591A73 /* brain.png in Resources */ = {isa = PBXBuildFile; fileRef = 737996251FCD5B9400591A73 /* brain.png */; };
@@ -58,7 +57,6 @@
 		73450D3D1FC3DB3200E09B9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		73450D3F1FC3DB3200E09B9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		734B23351FFE32E2007A3586 /* time.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = time.png; sourceTree = "<group>"; };
-		734B233820036C56007A3586 /* calenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calenderViewController.swift; sourceTree = "<group>"; };
 		736EA1222013432B00BFE690 /* signUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpViewController.swift; sourceTree = "<group>"; };
 		736EA1262013438400BFE690 /* logInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logInViewController.swift; sourceTree = "<group>"; };
 		737996251FCD5B9400591A73 /* brain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brain.png; sourceTree = "<group>"; };
@@ -143,7 +141,6 @@
 				73E77A261FE510560026939A /* AlertController.swift */,
 				73CC02311FD94D4300F59F6A /* calorieViewController.swift */,
 				73450D371FC3DB3200E09B9B /* Main.storyboard */,
-				734B233820036C56007A3586 /* calenderViewController.swift */,
 				73E77A871FF4EEDD0026939A /* moreViewController.swift */,
 				73450D3A1FC3DB3200E09B9B /* Assets.xcassets */,
 				73450D3C1FC3DB3200E09B9B /* LaunchScreen.storyboard */,
@@ -371,7 +368,6 @@
 				73E77A271FE510560026939A /* AlertController.swift in Sources */,
 				73450D361FC3DB3200E09B9B /* ViewController.swift in Sources */,
 				736EA1272013438400BFE690 /* logInViewController.swift in Sources */,
-				734B233920036C56007A3586 /* calenderViewController.swift in Sources */,
 				7334452C1FF78ACF00F9A5BD /* mmMainViewController.swift in Sources */,
 				73A3B7B920077BDD00B4D70A /* timelineAddViewController.swift in Sources */,
 				733445301FF78B0900F9A5BD /* mmSelecteViewController.swift in Sources */,

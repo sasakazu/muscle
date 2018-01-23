@@ -118,7 +118,7 @@
             </objects>
             <point key="canvasLocation" x="230" y="-2040"/>
         </scene>
-        <!--More View Controller-->
+        <!--more-->
         <scene sceneID="h9Y-84-cHV">
             <objects>
                 <viewController id="02B-Q6-PO4" customClass="moreViewController" customModule="muscle" customModuleProvider="target" sceneMemberID="viewController">
@@ -142,7 +142,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="lDB-o6-2OS"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="more" id="x2M-DW-363"/>
+                    <tabBarItem key="tabBarItem" title="more" id="x2M-DW-363"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p23-qx-gl8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -420,76 +420,17 @@
             </objects>
             <point key="canvasLocation" x="1689" y="1755"/>
         </scene>
-        <!--Data Source-->
+        <!--Diary-->
         <scene sceneID="NKl-fg-J3v">
             <objects>
                 <viewController id="YCa-e3-xTG" customClass="calenderViewController" customModule="muscle" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Sfu-AH-h2K">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iqu-wV-q25">
-                                <rect key="frame" x="16" y="374" width="159" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="159" id="4Jz-2E-Zoh"/>
-                                    <constraint firstAttribute="height" constant="21" id="tI3-Ec-EOk"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gsq-sx-i5S">
-                                <rect key="frame" x="0.0" y="403" width="375" height="215"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Bn-nV-YxG">
-                                <rect key="frame" x="313" y="365" width="46" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="46" id="WpL-7B-DUi"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <state key="normal" title="+"/>
-                            </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gwY-VJ-Pjh" customClass="FSCalendar">
-                                <rect key="frame" x="0.0" y="28" width="375" height="329"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="375" id="REm-1z-i27"/>
-                                    <constraint firstAttribute="width" constant="375" id="a4X-xs-a4e"/>
-                                    <constraint firstAttribute="height" constant="329" id="aU3-nw-jx3"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="309" id="tOc-Ra-t6R"/>
-                                </constraints>
-                                <connections>
-                                    <outlet property="dataSource" destination="YCa-e3-xTG" id="Mk4-Q1-1sQ"/>
-                                    <outlet property="delegate" destination="YCa-e3-xTG" id="a7F-c2-g4h"/>
-                                </connections>
-                            </view>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="gwY-VJ-Pjh" firstAttribute="top" secondItem="eaT-tG-get" secondAttribute="top" constant="8" id="5ux-Zx-cob"/>
-                            <constraint firstItem="9Bn-nV-YxG" firstAttribute="top" secondItem="gwY-VJ-Pjh" secondAttribute="bottom" constant="8" id="7Sv-Dx-yft"/>
-                            <constraint firstItem="gwY-VJ-Pjh" firstAttribute="leading" secondItem="eaT-tG-get" secondAttribute="leading" id="8ic-z7-Se9"/>
-                            <constraint firstItem="9Bn-nV-YxG" firstAttribute="trailing" secondItem="Sfu-AH-h2K" secondAttribute="trailingMargin" id="BGu-KU-GRf"/>
-                            <constraint firstItem="gsq-sx-i5S" firstAttribute="top" secondItem="iqu-wV-q25" secondAttribute="bottom" constant="8" symbolic="YES" id="CwE-q0-qhv"/>
-                            <constraint firstItem="iqu-wV-q25" firstAttribute="top" secondItem="gwY-VJ-Pjh" secondAttribute="bottom" constant="17" id="R7e-M3-7et"/>
-                            <constraint firstItem="gwY-VJ-Pjh" firstAttribute="top" secondItem="eaT-tG-get" secondAttribute="top" constant="8" id="SoK-V0-QEA"/>
-                            <constraint firstItem="gwY-VJ-Pjh" firstAttribute="trailing" secondItem="eaT-tG-get" secondAttribute="trailing" id="UGe-Gh-Voc"/>
-                            <constraint firstItem="gwY-VJ-Pjh" firstAttribute="leading" secondItem="eaT-tG-get" secondAttribute="leading" id="Wre-gb-8Ly"/>
-                            <constraint firstItem="iqu-wV-q25" firstAttribute="leading" secondItem="Sfu-AH-h2K" secondAttribute="leadingMargin" id="ZkL-wr-TfS"/>
-                            <constraint firstItem="gsq-sx-i5S" firstAttribute="bottom" secondItem="eaT-tG-get" secondAttribute="bottom" id="dA0-dX-NKb"/>
-                            <constraint firstItem="gwY-VJ-Pjh" firstAttribute="trailing" secondItem="eaT-tG-get" secondAttribute="trailing" id="eEA-Be-D8A"/>
-                            <constraint firstItem="gsq-sx-i5S" firstAttribute="top" secondItem="9Bn-nV-YxG" secondAttribute="bottom" constant="8" symbolic="YES" id="gNy-XM-WWd"/>
-                            <constraint firstItem="gsq-sx-i5S" firstAttribute="trailing" secondItem="gwY-VJ-Pjh" secondAttribute="trailing" id="hvZ-Ik-Uws"/>
-                            <constraint firstItem="gsq-sx-i5S" firstAttribute="leading" secondItem="gwY-VJ-Pjh" secondAttribute="leading" id="wxF-OA-zZK"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="eaT-tG-get"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Diary" image="diary.png" id="NzS-aI-fv2"/>
-                    <connections>
-                        <outlet property="calender" destination="gwY-VJ-Pjh" id="QF3-th-n94"/>
-                        <outlet property="todaySchedule" destination="iqu-wV-q25" id="NcS-7n-Vin"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SDH-UR-onD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
