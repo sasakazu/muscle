@@ -24,6 +24,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         
         FirebaseApp.configure()
         
+        
+        
+        
         GIDSignIn.sharedInstance().clientID = FirebaseApp.app()!.options.clientID
         GIDSignIn.sharedInstance().delegate = self
         
@@ -54,6 +57,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         Auth.auth().signIn(with: credential) { (user, error) in
             print("Sign on Firebase successfully")
             // performSegue でログイン後のVCへ遷移させる。
+            
+          
+        
+            
+            
         }
     }
     

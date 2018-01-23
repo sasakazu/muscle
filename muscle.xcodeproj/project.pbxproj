@@ -33,6 +33,7 @@
 		73A3B7B720062AE100B4D70A /* img3.png in Resources */ = {isa = PBXBuildFile; fileRef = 73A3B7B320062AE100B4D70A /* img3.png */; };
 		73A3B7B920077BDD00B4D70A /* timelineAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A3B7B820077BDD00B4D70A /* timelineAddViewController.swift */; };
 		73A3B7BD200A15B300B4D70A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73A3B7BC200A15B300B4D70A /* MobileCoreServices.framework */; };
+		73BA25B320173E7F009CF6C6 /* acountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BA25B220173E7F009CF6C6 /* acountViewController.swift */; };
 		73CC02321FD94D4300F59F6A /* calorieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CC02311FD94D4300F59F6A /* calorieViewController.swift */; };
 		73E77A271FE510560026939A /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E77A261FE510560026939A /* AlertController.swift */; };
 		73E77A611FEFAEA50026939A /* knowTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E77A601FEFAEA50026939A /* knowTableViewController.swift */; };
@@ -72,6 +73,7 @@
 		73A3B7B320062AE100B4D70A /* img3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img3.png; sourceTree = "<group>"; };
 		73A3B7B820077BDD00B4D70A /* timelineAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timelineAddViewController.swift; sourceTree = "<group>"; };
 		73A3B7BC200A15B300B4D70A /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		73BA25B220173E7F009CF6C6 /* acountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = acountViewController.swift; sourceTree = "<group>"; };
 		73CC02311FD94D4300F59F6A /* calorieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calorieViewController.swift; sourceTree = "<group>"; };
 		73E77A261FE510560026939A /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
 		73E77A601FEFAEA50026939A /* knowTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = knowTableViewController.swift; path = ../knowTableViewController.swift; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				736EA1262013438400BFE690 /* logInViewController.swift */,
+				73BA25B220173E7F009CF6C6 /* acountViewController.swift */,
 				736EA1222013432B00BFE690 /* signUpViewController.swift */,
 			);
 			path = users;
@@ -377,6 +380,7 @@
 				73CC02321FD94D4300F59F6A /* calorieViewController.swift in Sources */,
 				73E77A881FF4EEDD0026939A /* moreViewController.swift in Sources */,
 				73450D341FC3DB3100E09B9B /* AppDelegate.swift in Sources */,
+				73BA25B320173E7F009CF6C6 /* acountViewController.swift in Sources */,
 				739B496D1FD936CD006F0C2D /* timeLineViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
