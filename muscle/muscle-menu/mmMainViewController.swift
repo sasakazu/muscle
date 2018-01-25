@@ -11,7 +11,7 @@ import UIKit
 class mmMainViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     
-    var test = [ "test1", "test2", "test3", "test4"]
+    var mmMenu = [""]
 
     
     @IBOutlet weak var mmMainTableView: UITableView!
@@ -20,13 +20,13 @@ class mmMainViewController: UIViewController, UITableViewDataSource, UITableView
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return test.count
+        return mmMenu.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "mmMainCell", for: indexPath)        
-        cell.textLabel?.text = test[indexPath.row]
+        cell.textLabel?.text = mmMenu[indexPath.row] as! String
         
         return cell
     }
@@ -36,7 +36,7 @@ class mmMainViewController: UIViewController, UITableViewDataSource, UITableView
 
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            test.remove(at: indexPath.row)
+            mmMenu.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
         }
     }
@@ -49,9 +49,9 @@ class mmMainViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
-        let mmMainitem = test[sourceIndexPath.row]
-        test.remove(at: sourceIndexPath.row)
-        test.insert(mmMainitem, at: destinationIndexPath.row)
+        let mmMainitem = mmMenu[sourceIndexPath.row]
+        mmMenu.remove(at: sourceIndexPath.row)
+        mmMenu.insert(mmMainitem, at: destinationIndexPath.row)
         
     }
     
@@ -76,17 +76,10 @@ class mmMainViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     
-    
-    
-    
-    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-
-
 
 }

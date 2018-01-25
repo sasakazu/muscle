@@ -10,6 +10,11 @@ import UIKit
 
 class mmSelecteViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    // ここで受け取る
+    var sendText:String = ""
+    
+    @IBOutlet weak var mmNameTitle: UILabel!
+    
     //    セクション
     let mmSection = ["胸", "腕", "背中"]
 
@@ -27,6 +32,7 @@ class mmSelecteViewController: UIViewController, UITableViewDelegate, UITableVie
     
     
     @IBOutlet weak var mmSelecteTableview: UITableView!
+    @IBOutlet weak var mmTitle: UILabel!
     
     
     
@@ -34,6 +40,9 @@ class mmSelecteViewController: UIViewController, UITableViewDelegate, UITableVie
         super.viewDidLoad()
         // trueで複数選択、falseで単一選択
         mmSelecteTableview.allowsMultipleSelection = true
+        
+         mmNameTitle.text = sendText
+        
 
     }
     

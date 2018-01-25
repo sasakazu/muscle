@@ -10,18 +10,34 @@ import UIKit
 
 class mmNameViewController: UIViewController {
 
+    
+    @IBOutlet weak var mmNameField: UITextField!
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
 
-
-
+    @IBAction func nextTappedBtn(_ sender: Any) {
+    }
+    
+  
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "mmTitleSend" {
+            let mmSelecteViewController:mmSelecteViewController = segue.destination as! mmSelecteViewController
+            mmSelecteViewController.sendText = self.mmNameField.text! as String!
+        }
+    }
+    
+    
+    
 }
