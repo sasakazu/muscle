@@ -144,7 +144,12 @@ class mmSelecteViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "sendMmData" {
+            let mmMainViewController:mmMainViewController = segue.destination as! mmMainViewController
+            mmMainViewController.mmMenu = [self.mmNameTitle.text! as String]
+        }
+    }
     
     
 }

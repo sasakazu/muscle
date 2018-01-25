@@ -14,9 +14,6 @@ class mmNameViewController: UIViewController {
     @IBOutlet weak var mmNameField: UITextField!
     
     
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 

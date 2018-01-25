@@ -11,8 +11,8 @@ import UIKit
 class mmMainViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     
-    var mmMenu = [""]
-
+    // ここで受け取る
+    var mmMenu:Array = [""]
     
     @IBOutlet weak var mmMainTableView: UITableView!
     @IBOutlet weak var mmMainEditBtn: UIBarButtonItem!
@@ -26,7 +26,7 @@ class mmMainViewController: UIViewController, UITableViewDataSource, UITableView
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "mmMainCell", for: indexPath)        
-        cell.textLabel?.text = mmMenu[indexPath.row] as! String
+        cell.textLabel?.text = mmMenu[indexPath.row] 
         
         return cell
     }
