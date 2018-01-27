@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		731CB20C201C9337000E2A4D /* musclemenuMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731CB20B201C9337000E2A4D /* musclemenuMainViewController.swift */; };
 		731CB20E201C9365000E2A4D /* musclemenuAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731CB20D201C9365000E2A4D /* musclemenuAddViewController.swift */; };
+		731CB211201C9696000E2A4D /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 731CB20F201C9696000E2A4D /* Model.xcdatamodeld */; };
 		73341D2D1FDBE69700FD98FA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 73341D2C1FDBE69600FD98FA /* GoogleService-Info.plist */; };
 		733445341FF7AA0C00F9A5BD /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 733445331FF7AA0C00F9A5BD /* home.png */; };
 		73450D341FC3DB3100E09B9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73450D331FC3DB3100E09B9B /* AppDelegate.swift */; };
@@ -44,6 +45,7 @@
 		2EE133AC13E22601E0AB302A /* Pods-muscle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-muscle.debug.xcconfig"; path = "Pods/Target Support Files/Pods-muscle/Pods-muscle.debug.xcconfig"; sourceTree = "<group>"; };
 		731CB20B201C9337000E2A4D /* musclemenuMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = musclemenuMainViewController.swift; sourceTree = "<group>"; };
 		731CB20D201C9365000E2A4D /* musclemenuAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = musclemenuAddViewController.swift; sourceTree = "<group>"; };
+		731CB210201C9696000E2A4D /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		73341D2C1FDBE69600FD98FA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		733445331FF7AA0C00F9A5BD /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home.png; path = ../../../../../Downloads/home.png; sourceTree = "<group>"; };
 		73450D301FC3DB3100E09B9B /* muscle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = muscle.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,6 +138,7 @@
 				73450D351FC3DB3200E09B9B /* ViewController.swift */,
 				73E77A261FE510560026939A /* AlertController.swift */,
 				73450D371FC3DB3200E09B9B /* Main.storyboard */,
+				731CB20F201C9696000E2A4D /* Model.xcdatamodeld */,
 				73E77A871FF4EEDD0026939A /* moreViewController.swift */,
 				73450D3A1FC3DB3200E09B9B /* Assets.xcassets */,
 				73450D3C1FC3DB3200E09B9B /* LaunchScreen.storyboard */,
@@ -360,6 +363,7 @@
 				736EA1232013432B00BFE690 /* signUpViewController.swift in Sources */,
 				73E77A611FEFAEA50026939A /* knowTableViewController.swift in Sources */,
 				731CB20E201C9365000E2A4D /* musclemenuAddViewController.swift in Sources */,
+				731CB211201C9696000E2A4D /* Model.xcdatamodeld in Sources */,
 				73E77A271FE510560026939A /* AlertController.swift in Sources */,
 				73450D361FC3DB3200E09B9B /* ViewController.swift in Sources */,
 				731CB20C201C9337000E2A4D /* musclemenuMainViewController.swift in Sources */,
@@ -556,6 +560,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		731CB20F201C9696000E2A4D /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				731CB210201C9696000E2A4D /* Model.xcdatamodel */,
+			);
+			currentVersion = 731CB210201C9696000E2A4D /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 73450D281FC3DB3100E09B9B /* Project object */;
 }
