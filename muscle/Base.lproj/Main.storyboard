@@ -630,10 +630,10 @@
             </objects>
             <point key="canvasLocation" x="201" y="-878"/>
         </scene>
-        <!--Mm Main View Controller-->
+        <!--Musclemenu Main View Controller-->
         <scene sceneID="6cD-g9-Rwn">
             <objects>
-                <viewController id="Vcq-ZB-WX0" customClass="mmMainViewController" customModule="muscle" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Vcq-ZB-WX0" customClass="musclemenuMainViewController" customModule="muscle" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dsz-FW-xaI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -652,140 +652,61 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="Vcq-ZB-WX0" id="1lY-gf-Ntc"/>
-                                    <outlet property="delegate" destination="Vcq-ZB-WX0" id="UCG-lN-E6u"/>
-                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="1oF-yM-bvw"/>
                     </view>
                     <navigationItem key="navigationItem" id="J9n-Fg-sBC">
-                        <barButtonItem key="leftBarButtonItem" title="Edit" id="LzC-B5-Lrt">
-                            <connections>
-                                <action selector="mmMainEdtitActionBtn:" destination="Vcq-ZB-WX0" id="MUN-Hv-Fzy"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="leftBarButtonItem" title="Edit" id="LzC-B5-Lrt"/>
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="1cX-vF-6mh">
                             <connections>
-                                <segue destination="zMJ-Bq-vVp" kind="show" id="cPZ-Bv-UAq"/>
+                                <segue destination="aKp-rn-Arw" kind="show" id="ivt-82-UMj"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <connections>
-                        <outlet property="mmMainEditBtn" destination="LzC-B5-Lrt" id="hOZ-7J-0tD"/>
-                        <outlet property="mmMainTableView" destination="MME-bf-f2d" id="2zw-Oi-nFY"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tJ1-Cp-QvV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="919.20000000000005" y="-878.41079460269873"/>
+            <point key="canvasLocation" x="959" y="-878"/>
         </scene>
-        <!--Mm Name View Controller-->
-        <scene sceneID="XkJ-iA-eyd">
+        <!--Add-->
+        <scene sceneID="Oka-gn-aO2">
             <objects>
-                <viewController id="zMJ-Bq-vVp" customClass="mmNameViewController" customModule="muscle" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ZHG-tM-4SY">
+                <viewController id="aKp-rn-Arw" customClass="musclemenuAddViewController" customModule="muscle" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9SP-w6-lgX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="メニューの名前記入" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n47-R4-g81">
-                                <rect key="frame" x="16" y="166" width="343" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VKS-wJ-WY8">
+                                <rect key="frame" x="16" y="101" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" spellCheckingType="no" returnKeyType="done"/>
+                                <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tG6-qp-9ju">
-                                <rect key="frame" x="260" y="361" width="99" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
-                                <state key="normal" title=" Next"/>
-                                <connections>
-                                    <action selector="nextTappedBtn:" destination="zMJ-Bq-vVp" eventType="touchUpInside" id="666-A6-Sbm"/>
-                                    <segue destination="ZFZ-FI-3cX" kind="show" identifier="mmTitleSend" id="aZD-tT-722"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="2kw-Cq-yFN"/>
-                    </view>
-                    <connections>
-                        <outlet property="mmNameField" destination="n47-R4-g81" id="OMo-RP-jto"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="g66-ph-0g4" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1620" y="-878.41079460269873"/>
-        </scene>
-        <!--Title-->
-        <scene sceneID="IXG-Jc-mvX">
-            <objects>
-                <viewController id="ZFZ-FI-3cX" customClass="mmSelecteViewController" customModule="muscle" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Mzq-jJ-UmT">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UVU-5z-c9v">
-                                <rect key="frame" x="0.0" y="115" width="375" height="449"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EDv-nk-Fjj">
+                                <rect key="frame" x="0.0" y="164" width="375" height="366"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="mmSelecteCell" id="iYl-xn-dhA">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iYl-xn-dhA" id="BCy-Sd-f19">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="ZFZ-FI-3cX" id="pJ2-U9-LpZ"/>
-                                    <outlet property="delegate" destination="ZFZ-FI-3cX" id="inN-iQ-j7a"/>
-                                </connections>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6yI-Hp-ZHS">
-                                <rect key="frame" x="164" y="621" width="46" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="7W9-Uz-daJ"/>
-                                    <constraint firstAttribute="width" constant="46" id="Yfl-rn-qwU"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="OK!"/>
-                                <connections>
-                                    <action selector="mmOkBtn:" destination="ZFZ-FI-3cX" eventType="touchUpInside" id="foP-s0-FWq"/>
-                                    <segue destination="Vcq-ZB-WX0" kind="show" identifier="sendMmData" id="fkZ-hb-jF1"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="flH-jc-shJ">
-                                <rect key="frame" x="16" y="86" width="343" height="21"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gOJ-XB-m3T">
+                                <rect key="frame" x="131" y="564" width="113" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="追加"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="6yI-Hp-ZHS" firstAttribute="centerX" secondItem="Mzq-jJ-UmT" secondAttribute="centerX" id="5jT-GM-mYO"/>
-                            <constraint firstItem="aWP-aa-Tw8" firstAttribute="bottom" secondItem="6yI-Hp-ZHS" secondAttribute="bottom" constant="16" id="66y-aW-Hsm"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="aWP-aa-Tw8"/>
+                        <viewLayoutGuide key="safeArea" id="Uac-B9-nID"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="rBb-NQ-Ms1">
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="zR6-XE-QzO"/>
+                    <navigationItem key="navigationItem" title="Add" id="Gud-py-JTP">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="2Pf-go-7hb"/>
                     </navigationItem>
-                    <connections>
-                        <outlet property="mmNameTitle" destination="flH-jc-shJ" id="AYc-AE-Nhc"/>
-                        <outlet property="mmSelecteTableview" destination="UVU-5z-c9v" id="BFy-Sn-DPD"/>
-                        <outlet property="mmTitle" destination="flH-jc-shJ" id="R06-7g-eJq"/>
-                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="EUr-cA-PdT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0bz-4m-ayW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2352.8000000000002" y="-878.41079460269873"/>
+            <point key="canvasLocation" x="1688.8" y="-878.41079460269873"/>
         </scene>
     </scenes>
     <resources>
@@ -797,7 +718,6 @@
         <image name="timeline.png" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="fkZ-hb-jF1"/>
         <segue reference="mw8-DC-7gU"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -1,5 +1,5 @@
 //
-//  musclemenuAddViewController.swift
+//  musclemenuMainViewController.swift
 //  muscle
 //
 //  Created by 笹倉 一也 on 2018/01/27.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class musclemenuAddViewController: UIViewController {
+class musclemenuMainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
