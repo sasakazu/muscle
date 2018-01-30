@@ -672,7 +672,7 @@
             </objects>
             <point key="canvasLocation" x="954" y="-878"/>
         </scene>
-        <!--Title-->
+        <!--メニュー追加-->
         <scene sceneID="Rpo-Jj-MgD">
             <objects>
                 <viewController id="KnA-kf-eKr" customClass="musclemenuAddViewController" customModule="muscle" customModuleProvider="target" sceneMemberID="viewController">
@@ -714,11 +714,16 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="ghp-5x-O0L"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="D15-bL-lHj">
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="KSn-jm-bSH"/>
+                    <navigationItem key="navigationItem" title="メニュー追加" id="D15-bL-lHj">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="KSn-jm-bSH">
+                            <connections>
+                                <action selector="musclemenuOtherMenuTapped:" destination="KnA-kf-eKr" id="uoZ-fi-AaW"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="musclemenuAddBtn" destination="OJ5-hm-fzL" id="Ve2-He-hwv"/>
+                        <outlet property="musclemenuTableView" destination="HqF-pr-9vI" id="Quk-jS-FDN"/>
                         <outlet property="musclemenuTextField" destination="bTF-x5-cZh" id="OXr-f5-IN4"/>
                     </connections>
                 </viewController>

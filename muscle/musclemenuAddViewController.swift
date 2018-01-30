@@ -33,5 +33,31 @@ class musclemenuAddViewController: UIViewController {
     @IBAction func musclemenuAddTapped(_ sender: Any) {
     }
     
-
+    @IBAction func musclemenuOtherMenuTapped(_ sender: Any) {
+        
+        var alert = UIAlertController(title: "メニューを追加", message: "好きなメニューを追加できます。", preferredStyle: .alert)
+        let saveAction = UIAlertAction(title: "Add", style: .default) { (action:UIAlertAction!) -> Void in
+            
+            // 入力したテキストをコンソールに表示
+            let textField = alert.textFields![0] as UITextField
+            print(textField.text)
+        }
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .default) { (action:UIAlertAction!) -> Void in
+        }
+        
+        // UIAlertControllerにtextFieldを追加
+        alert.addTextField { (textField:UITextField!) -> Void in
+        }
+        
+        alert.addAction(saveAction)
+        alert.addAction(cancelAction)
+        
+        present(alert, animated: true, completion: nil)
+    
+    }
+    
+    
+    
+    
 }
