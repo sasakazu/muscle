@@ -8,10 +8,11 @@
 
 import UIKit
 
-class musclemenuAddViewController: UIViewController {
+class musclemenuAddViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
   
-
+    var musclemenuItem = [ "ダンベル", "ベンチプレス", "デットリフト" ]
+    
     
     @IBOutlet weak var musclemenuTextField: UITextField!
     @IBOutlet weak var musclemenuTableView: UITableView!
@@ -35,12 +36,12 @@ class musclemenuAddViewController: UIViewController {
     
     @IBAction func musclemenuOtherMenuTapped(_ sender: Any) {
         
-        var alert = UIAlertController(title: "メニューを追加", message: "好きなメニューを追加できます。", preferredStyle: .alert)
+        let alert = UIAlertController(title: "メニューを追加", message: "好きなメニューを追加できます。", preferredStyle: .alert)
         let saveAction = UIAlertAction(title: "Add", style: .default) { (action:UIAlertAction!) -> Void in
             
             // 入力したテキストをコンソールに表示
             let textField = alert.textFields![0] as UITextField
-            print(textField.text)
+            print(textField.text!)
         }
         
         let cancelAction = UIAlertAction(title: "Cancel", style: .default) { (action:UIAlertAction!) -> Void in
@@ -56,6 +57,22 @@ class musclemenuAddViewController: UIViewController {
         present(alert, animated: true, completion: nil)
     
     }
+    
+    //    table need func
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return musclemenuItem.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "masclemenuAddCell", for: indexPath)
+        
+         cell.textLabel?.text = musclemenuItem[indexPath.row]
+        
+        return cell
+    }
+    
     
     
     

@@ -709,6 +709,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="KnA-kf-eKr" id="oZz-Sz-WCF"/>
+                                    <outlet property="delegate" destination="KnA-kf-eKr" id="g84-io-hFD"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
