@@ -10,6 +10,8 @@
 		731CB211201C9696000E2A4D /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 731CB20F201C9696000E2A4D /* Model.xcdatamodeld */; };
 		73341D2D1FDBE69700FD98FA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 73341D2C1FDBE69600FD98FA /* GoogleService-Info.plist */; };
 		733445341FF7AA0C00F9A5BD /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 733445331FF7AA0C00F9A5BD /* home.png */; };
+		733755242020796500EB54D6 /* musclemenuAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733755232020796500EB54D6 /* musclemenuAddViewController.swift */; };
+		7337552620207D7C00EB54D6 /* musclemenuMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7337552520207D7C00EB54D6 /* musclemenuMainViewController.swift */; };
 		73450D341FC3DB3100E09B9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73450D331FC3DB3100E09B9B /* AppDelegate.swift */; };
 		73450D361FC3DB3200E09B9B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73450D351FC3DB3200E09B9B /* ViewController.swift */; };
 		73450D391FC3DB3200E09B9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73450D371FC3DB3200E09B9B /* Main.storyboard */; };
@@ -44,6 +46,8 @@
 		731CB210201C9696000E2A4D /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		73341D2C1FDBE69600FD98FA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		733445331FF7AA0C00F9A5BD /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home.png; path = ../../../../../Downloads/home.png; sourceTree = "<group>"; };
+		733755232020796500EB54D6 /* musclemenuAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = musclemenuAddViewController.swift; path = ../musclemenuAddViewController.swift; sourceTree = "<group>"; };
+		7337552520207D7C00EB54D6 /* musclemenuMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = musclemenuMainViewController.swift; path = ../musclemenuMainViewController.swift; sourceTree = "<group>"; };
 		73450D301FC3DB3100E09B9B /* muscle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = muscle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73450D331FC3DB3100E09B9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73450D351FC3DB3200E09B9B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -185,6 +189,8 @@
 		73E77A291FE8F73A0026939A /* muscle-menu */ = {
 			isa = PBXGroup;
 			children = (
+				733755232020796500EB54D6 /* musclemenuAddViewController.swift */,
+				7337552520207D7C00EB54D6 /* musclemenuMainViewController.swift */,
 			);
 			path = "muscle-menu";
 			sourceTree = "<group>";
@@ -355,7 +361,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				736EA1232013432B00BFE690 /* signUpViewController.swift in Sources */,
+				7337552620207D7C00EB54D6 /* musclemenuMainViewController.swift in Sources */,
 				73E77A611FEFAEA50026939A /* knowTableViewController.swift in Sources */,
+				733755242020796500EB54D6 /* musclemenuAddViewController.swift in Sources */,
 				731CB211201C9696000E2A4D /* Model.xcdatamodeld in Sources */,
 				73E77A271FE510560026939A /* AlertController.swift in Sources */,
 				73450D361FC3DB3200E09B9B /* ViewController.swift in Sources */,
