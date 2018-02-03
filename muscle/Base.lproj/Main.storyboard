@@ -680,25 +680,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bTF-x5-cZh">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="メニュー" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bTF-x5-cZh">
                                 <rect key="frame" x="16" y="82" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OJ5-hm-fzL">
-                                <rect key="frame" x="164" y="576" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="追加"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OJ5-hm-fzL">
+                                <rect key="frame" x="172" y="576" width="31" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="31" id="Hdj-zl-EA5"/>
+                                    <constraint firstAttribute="height" constant="30" id="tmU-HT-VLH"/>
+                                </constraints>
+                                <state key="normal" title="OK!"/>
                                 <connections>
                                     <action selector="musclemenuAddTapped:" destination="KnA-kf-eKr" eventType="touchUpInside" id="6wh-CL-LLG"/>
                                 </connections>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HqF-pr-9vI">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HqF-pr-9vI">
                                 <rect key="frame" x="0.0" y="132" width="375" height="436"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="436" id="OCU-WA-H1X"/>
+                                    <constraint firstAttribute="width" constant="375" id="bN0-eu-GJ8"/>
+                                </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="masclemenuAddCell" id="gVd-dj-Yu4">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
@@ -716,6 +721,18 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bTF-x5-cZh" firstAttribute="top" secondItem="ghp-5x-O0L" secondAttribute="top" constant="18" id="1VJ-hT-jlj"/>
+                            <constraint firstItem="ghp-5x-O0L" firstAttribute="bottom" secondItem="OJ5-hm-fzL" secondAttribute="bottom" constant="12" id="8eW-kl-J87"/>
+                            <constraint firstItem="HqF-pr-9vI" firstAttribute="leading" secondItem="ghp-5x-O0L" secondAttribute="leading" id="A5m-tl-II7"/>
+                            <constraint firstItem="ghp-5x-O0L" firstAttribute="trailing" secondItem="bTF-x5-cZh" secondAttribute="trailing" constant="16" id="I9e-TG-zcQ"/>
+                            <constraint firstItem="OJ5-hm-fzL" firstAttribute="top" secondItem="HqF-pr-9vI" secondAttribute="bottom" constant="8" id="KUV-Fr-5Vj"/>
+                            <constraint firstItem="HqF-pr-9vI" firstAttribute="trailing" secondItem="ghp-5x-O0L" secondAttribute="trailing" id="Lez-U2-Zce"/>
+                            <constraint firstItem="HqF-pr-9vI" firstAttribute="top" secondItem="bTF-x5-cZh" secondAttribute="bottom" constant="20" id="QIC-6J-HqQ"/>
+                            <constraint firstItem="OJ5-hm-fzL" firstAttribute="top" secondItem="HqF-pr-9vI" secondAttribute="bottom" constant="8" id="amq-Ua-cXL"/>
+                            <constraint firstItem="OJ5-hm-fzL" firstAttribute="centerX" secondItem="yEi-Ji-jS1" secondAttribute="centerX" id="nG2-yH-XJy"/>
+                            <constraint firstItem="bTF-x5-cZh" firstAttribute="leading" secondItem="ghp-5x-O0L" secondAttribute="leading" constant="16" id="zgH-4p-hzb"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ghp-5x-O0L"/>
                     </view>
                     <navigationItem key="navigationItem" title="メニュー追加" id="D15-bL-lHj">
